@@ -9,8 +9,13 @@ class Settings(BaseSettings):
     NEO4J_PASSWORD: str = Field(default="password")
     NEO4J_DATABASE: str = Field(default="neo4j")
 
+    OPENAI_API_KEY: str = Field(default="neo4j")
+    OPENAI_BASE_URL: str = Field(default="neo4j")
+    OPENAI_MODEL: str = Field(default="neo4j")
+    OPENAI_FIX_MODEL: str = Field(default="neo4j")
+
     # Driver tuning (reasonable defaults)
-    NEO4J_MAX_POOL_SIZE: int = Field(default=20)
+    NEO4J_MAX_POOL_SIZE: int = Field(default=3)
     NEO4J_CONNECTION_TIMEOUT_SEC: int = Field(default=15)
 
     class Config:
