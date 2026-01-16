@@ -1,0 +1,72 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "Адельрейвна",
+      "first_name": "Кітана",
+      "middle_name": "Ернестівна",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1234567890",
+      "full_name_raw": "Адельрейвна Кітана Ернестівна",
+      "normalized_name": "Адельрейвна Кітана Ернестівна",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-1234567890",
+      "basis_request": null,
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "3",
+      "doc_type": "Постанова",
+      "series": null,
+      "number": "99955632",
+      "issued_by": "Соломянський районний суд міста Києва",
+      "issued_date": "2022-02-15",
+      "expiry_date": null
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "З-1234567890",
+        "node_label": "Document",
+        "node_id": "3"
+      }
+    ]
+  }
+}

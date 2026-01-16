@@ -1,0 +1,41 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "1111111111",
+      "name": "Оболонська районна в місті ГАЙСИНІ державна адміністрація",
+      "short_name": null,
+      "state": "1",
+      "state_text": "зареєстровано",
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

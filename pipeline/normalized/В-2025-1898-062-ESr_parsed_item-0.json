@@ -1,0 +1,278 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА",
+      "middle_name": "АДЕЛЬРЕЇВНА",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111117",
+      "name": "ГАЙСИНСЬКИЙ ВИПЛАТНИЙ ЦЕНТР",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    },
+    {
+      "edrpou": "1111111111",
+      "name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-####-####-###-###",
+      "basis_request": null,
+      "application_number": "###",
+      "application_date": "2023-06-13T12:50:05",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": "1111111111",
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111117",
+      "income_id": "1111111111|81111117|2017|1|128",
+      "income_accrued": 2580,
+      "income_paid": 2580,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2017,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111117",
+      "income_id": "1111111111|81111117|2017|2|128",
+      "income_accrued": 2580,
+      "income_paid": 2580,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2017,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111117",
+      "income_id": "1111111111|81111117|2017|3|128",
+      "income_accrued": 2580,
+      "income_paid": 2580,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2017,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111117",
+      "income_id": "1111111111|81111117|2017|4|128",
+      "income_accrued": 2580,
+      "income_paid": 2580,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2017,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2017|4|512",
+      "income_accrued": 1491957,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "512",
+      "income_type_description": "Податкова декларація платника єдиного податку - фізичної особи (першої та другої груп)",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2017,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "BUSINESS",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": null,
+      "income_id": "1111111111|null|2017|null|888",
+      "income_accrued": 7111111,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "888",
+      "income_type_description": "Податкова декларація про майновий стан і доходи",
+      "period_quarter_month": null,
+      "period_year": 2017,
+      "result_income": 3,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": "З-####-####-###-###"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111117|2017|1|128"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111117|2017|2|128"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111117|2017|3|128"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111117|2017|4|128"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2017|4|512"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|null|2017|null|888"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|81111117|2017|1|128",
+        "org_edrpou": "81111117"
+      },
+      {
+        "income_id": "1111111111|81111117|2017|2|128",
+        "org_edrpou": "81111117"
+      },
+      {
+        "income_id": "1111111111|81111117|2017|3|128",
+        "org_edrpou": "81111117"
+      },
+      {
+        "income_id": "1111111111|81111117|2017|4|128",
+        "org_edrpou": "81111117"
+      },
+      {
+        "income_id": "1111111111|1111111111|2017|4|512",
+        "org_edrpou": "1111111111"
+      },
+      {
+        "income_id": "1111111111|null|2017|null|888",
+        "org_edrpou": null
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "З-####-####-###-###",
+        "subject_rnokpp": "1111111111"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "Organization",
+        "node_id": "81111117"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "Organization",
+        "node_id": "1111111111"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|81111117|2017|1|128"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|81111117|2017|2|128"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|81111117|2017|3|128"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|81111117|2017|4|128"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|1111111111|2017|4|512"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|null|2017|null|888"
+      }
+    ]
+  }
+}

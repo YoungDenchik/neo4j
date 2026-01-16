@@ -1,0 +1,196 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20289123",
+      "name": "ГУ ПФУ У ВІННИЦЬКІЙ ОБЛАСТІ",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "3-####-####-###-###",
+      "basis_request": null,
+      "application_number": "55667788-9900-aabb-ccdd-eeff11223344",
+      "application_date": "2023-06-13T14:16:00",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2019|1|128",
+      "income_accrued": 10500,
+      "income_paid": 10500,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2019,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": "3-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2019|2|128",
+      "income_accrued": 10500,
+      "income_paid": 10500,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2019,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": "3-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2019|3|128",
+      "income_accrued": 10800,
+      "income_paid": 10800,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2019,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": "3-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2019|4|128",
+      "income_accrued": 10800,
+      "income_paid": 10800,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2019,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": "3-####-####-###-###"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2019|1|128"
+      },
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2019|2|128"
+      },
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2019|3|128"
+      },
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2019|4|128"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2019301234|20289123|2019|1|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2019|2|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2019|3|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2019|4|128",
+        "org_edrpou": "20289123"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "3-####-####-###-###",
+        "subject_rnokpp": "2019301234"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "Request",
+        "node_id": "3-####-####-###-###"
+      },
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "2019301234|20289123|2019|1|128"
+      },
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "2019301234|20289123|2019|2|128"
+      },
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "2019301234|20289123|2019|3|128"
+      },
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "2019301234|20289123|2019|4|128"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1999-01-01"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

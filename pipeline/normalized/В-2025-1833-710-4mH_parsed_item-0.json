@@ -1,0 +1,63 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": "1980-05-15T00:00:00Z"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|SKODA|OCTAVIA|TMBJC21Z5C2009988|СІРИЙ|1598",
+      "owner_rnokpp": "2935512345",
+      "property_type": "VEHICLE",
+      "description": "SKODA OCTAVIA",
+      "government_reg_number": "AB4567CE",
+      "serial_number": "TMBJC21Z5C2009988",
+      "address_text": null,
+      "area": null,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": "2935512345",
+        "property_id": "VEHICLE|SKODA|OCTAVIA|TMBJC21Z5C2009988|СІРИЙ|1598",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": null,
+        "node_label": "Property",
+        "node_id": "VEHICLE|SKODA|OCTAVIA|TMBJC21Z5C2009988|СІРИЙ|1598"
+      }
+    ]
+  }
+}

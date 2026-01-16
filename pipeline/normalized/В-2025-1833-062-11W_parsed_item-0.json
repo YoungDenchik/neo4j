@@ -1,0 +1,115 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "Петренко",
+      "first_name": "Іван",
+      "middle_name": "Іванович",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "Вінницька обласна державна адміністрація",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2015|1|SALARY",
+      "income_accrued": 12000.0,
+      "income_paid": 10020.0,
+      "tax_charged": 1980.0,
+      "tax_transferred": 1980.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2015,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "01b2c3d4-e5f6-7890-1234-567890123456"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2015|2|SALARY",
+      "income_accrued": 12000.0,
+      "income_paid": 10020.0,
+      "tax_charged": 1980.0,
+      "tax_transferred": 1980.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2015,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "01b2c3d4-e5f6-7890-1234-567890123456"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2015|3|SALARY",
+      "income_accrued": 12500.0,
+      "income_paid": 10437.5,
+      "tax_charged": 2062.5,
+      "tax_transferred": 2062.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2015,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "01b2c3d4-e5f6-7890-1234-567890123456"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2015|4|SALARY",
+      "income_accrued": 12500.0,
+      "income_paid": 10437.5,
+      "tax_charged": 2062.5,
+      "tax_transferred": 2062.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2015,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "01b2c3d4-e5f6-7890-1234-567890123456"
+    }
+  ],
+  "relationships": {
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2015|1|SALARY",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2015|2|SALARY",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2015|3|SALARY",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2015|4|SALARY",
+        "org_edrpou": "20028399"
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "Петренко",
+      "first_name": "Іван",
+      "middle_name": "Іванович",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "ВІННИЦЬКА ОБЛАСНА ДЕРЖАВНА АДМІНІСТРАЦІЯ",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-2935512345-20028399-2023-01-101",
+      "basis_request": null,
+      "application_number": "67890123-2023-06-13",
+      "application_date": "2023-06-13T13:12:00",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": "2935512345",
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2023|01|101",
+      "income_accrued": 25000.0,
+      "income_paid": 20125.0,
+      "tax_charged": 4875.0,
+      "tax_transferred": 4875.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "Січень",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2935512345-20028399-2023-01-101"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2023|02|101",
+      "income_accrued": 25000.0,
+      "income_paid": 20125.0,
+      "tax_charged": 4875.0,
+      "tax_transferred": 4875.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "Лютий",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2935512345-20028399-2023-02-101"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2023|12|101",
+      "income_accrued": 25000.0,
+      "income_paid": 20125.0,
+      "tax_charged": 4875.0,
+      "tax_transferred": 4875.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "Грудень",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2935512345-20028399-2023-12-101"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2023|01|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2023|02|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2023|12|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2023|01|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2023|02|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2023|12|101",
+        "org_edrpou": "20028399"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "З-2935512345-20028399-2023-01-101",
+        "subject_rnokpp": "2935512345"
+      },
+      {
+        "request_id": "З-2935512345-20028399-2023-02-101",
+        "subject_rnokpp": "2935512345"
+      },
+      {
+        "request_id": "З-2935512345-20028399-2023-12-101",
+        "subject_rnokpp": "2935512345"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-2935512345-20028399-2023-01-101",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2023|01|101"
+      },
+      {
+        "request_id": "З-2935512345-20028399-2023-02-101",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2023|02|101"
+      },
+      {
+        "request_id": "З-2935512345-20028399-2023-12-101",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2023|12|101"
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕРНЕСТ",
+      "middle_name": "ЕДМУНДОВИЧ",
+      "date_birth": "2021-11-05"
+    },
+    {
+      "rnokpp": "1234567891",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ"
+    },
+    {
+      "rnokpp": "1234567892",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "I-AM|778899",
+      "doc_type": "Certificate",
+      "series": "I-AM",
+      "number": "778899",
+      "issued_by": "Відділ державної реєстрації актів цивільного стану у місті Вінниці",
+      "issued_date": "2021-11-12"
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [
+      {
+        "child_rnokpp": "1234567890",
+        "parent_rnokpp": "1234567891"
+      },
+      {
+        "child_rnokpp": "1234567890",
+        "parent_rnokpp": "1234567892"
+      }
+    ],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

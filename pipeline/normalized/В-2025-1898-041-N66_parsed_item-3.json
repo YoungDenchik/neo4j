@@ -1,0 +1,31 @@
+{
+  "power_of_attorney": [
+    {
+      "poa_id": "666|2023-06-13T00:00:00|2026-06-13T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Портнова Д.Д. (8906)",
+      "notarial_reg_number": "666",
+      "attested_date": "2023-06-13T00:00:00",
+      "finished_date": "2026-06-13T00:00:00",
+      "witness_name": "м.ГАЙСИН, ГАЙСИНський міський, Портнова Д.Д. (8906)",
+      "notary_name": "Портнова Д.Д.",
+      "grantor_rnokpp": null,
+      "representative_rnokpp": null,
+      "property": {
+        "property_type": null,
+        "description": null,
+        "government_reg_number": null,
+        "serial_number": null,
+        "address_text": null,
+        "area": null
+      },
+      "source_request_id": null
+    }
+  ],
+  "relationships": {
+    "has_notarial_blank": [
+      {
+        "poa_id": "666|2023-06-13T00:00:00|2026-06-13T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Портнова Д.Д. (8906)",
+        "blank_id": "666|2023-06-13T00:00:00|2026-06-13T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Портнова Д.Д. (8906)"
+      }
+    ]
+  }
+}

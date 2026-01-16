@@ -1,0 +1,141 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА",
+      "middle_name": "АДЕЛЬРЕЇВНА"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "9",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "22",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "11",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "25",
+      "full_name_raw": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА",
+      "normalized_name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "14",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "15",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "16",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "8",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "6",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "7",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "17",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "19",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "3",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "18",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "20",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "10",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "4",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "13",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    },
+    {
+      "alias_id": "12",
+      "full_name_raw": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА",
+      "normalized_name": "ЕРНЕСТІВНА АДЕЛЬРЕЇВНА КІТАНА"
+    },
+    {
+      "alias_id": "21",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА"
+    },
+    {
+      "alias_id": "23",
+      "full_name_raw": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА",
+      "normalized_name": "КІТАНА АДЕЛЬРЕЇВНА ЕРНЕСТІВНА"
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

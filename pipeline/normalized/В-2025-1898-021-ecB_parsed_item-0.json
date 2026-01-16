@@ -1,0 +1,252 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "Ivanov",
+      "first_name": "Ivan",
+      "middle_name": "Ivanovich",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1234567890",
+      "full_name_raw": "Ivan Ivanovich Ivanov",
+      "normalized_name": "Ivan Ivanovich Ivanov",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "1234567890",
+      "name": "Company",
+      "short_name": "Co",
+      "state": "1",
+      "state_text": "Active",
+      "olf_code": "123",
+      "olf_name": "Industry",
+      "authorised_capital": 1000000,
+      "registration_date": "2020-01-01",
+      "termination_date": null
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "1234567890",
+      "executor_edrpou": null,
+      "full_name": "Ivan Ivanovich Ivanov",
+      "position": "Director",
+      "department": "Management"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "З-1234567890",
+      "basis_request": null,
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": "1234567890",
+      "executor_rnokpp": "1234567890"
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1234567890",
+      "org_edrpou": "1234567890",
+      "income_id": "1234567890|1234567890|2020|1|101",
+      "income_accrued": 10000,
+      "income_paid": 10000,
+      "tax_charged": 1800,
+      "tax_transferred": 1800,
+      "income_type_code": "101",
+      "income_type_description": "SALARY",
+      "period_quarter_month": "1",
+      "period_year": 2020,
+      "result_income": 10000,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234567890"
+    }
+  ],
+  "properties": [
+    {
+      "property_id": "VEHICLE|Toyota|Camry|2020|null|null",
+      "owner_rnokpp": "1234567890",
+      "property_type": "VEHICLE",
+      "description": "Toyota Camry 2020",
+      "government_reg_number": "123456",
+      "serial_number": "1234567890",
+      "address_text": null,
+      "area": null,
+      "ownership_type": "OWNED",
+      "since_date": "2020-01-01",
+      "source_request_id": "З-1234567890"
+    }
+  ],
+  "power_of_attorney": [
+    {
+      "poa_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov",
+      "notarial_reg_number": "123456",
+      "attested_date": "2020-01-01",
+      "finished_date": "2025-01-01",
+      "witness_name": "Ivan Ivanovich Ivanov",
+      "notary_name": "Notary",
+      "grantor_rnokpp": "1234567890",
+      "representative_rnokpp": "1234567890",
+      "property": {
+        "property_type": "VEHICLE",
+        "description": "Toyota Camry 2020",
+        "government_reg_number": "123456",
+        "serial_number": "1234567890",
+        "address_text": null,
+        "area": null
+      },
+      "source_request_id": "З-1234567890"
+    }
+  ],
+  "notarial_blanks": [
+    {
+      "blank_id": "1234567890|123456",
+      "serial": "123456",
+      "number": "123456"
+    }
+  ],
+  "documents": [
+    {
+      "doc_id": "PASSPORT|1234567890|123456",
+      "doc_type": "PASSPORT",
+      "series": "123456",
+      "number": "1234567890",
+      "issued_by": "Passport Office",
+      "issued_date": "2020-01-01",
+      "expiry_date": null
+    }
+  ],
+  "relationships": {
+    "director_of": [
+      {
+        "person_rnokpp": "1234567890",
+        "org_edrpou": "1234567890",
+        "role_text": "Director"
+      }
+    ],
+    "founder_of": [
+      {
+        "person_rnokpp": "1234567890",
+        "org_edrpou": "1234567890",
+        "capital": 1000000,
+        "role_text": "Founder"
+      }
+    ],
+    "child_of": [
+      {
+        "child_rnokpp": "1234567890",
+        "parent_rnokpp": "1234567890"
+      }
+    ],
+    "spouse_of": [
+      {
+        "person1_rnokpp": "1234567890",
+        "person2_rnokpp": "1234567890",
+        "marriage_date": "2020-01-01"
+      }
+    ],
+    "earned_income": [
+      {
+        "person_rnokpp": "1234567890",
+        "income_id": "1234567890|1234567890|2020|1|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1234567890|1234567890|2020|1|101",
+        "org_edrpou": "1234567890"
+      }
+    ],
+    "owns": [
+      {
+        "person_rnokpp": "1234567890",
+        "property_id": "VEHICLE|Toyota|Camry|2020|null|null",
+        "ownership_type": "OWNED",
+        "since_date": "2020-01-01"
+      }
+    ],
+    "has_grantor": [
+      {
+        "poa_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov",
+        "grantor_rnokpp": "1234567890"
+      }
+    ],
+    "has_representative": [
+      {
+        "poa_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov",
+        "representative_rnokpp": "1234567890"
+      }
+    ],
+    "has_property": [
+      {
+        "poa_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov",
+        "property_id": "VEHICLE|Toyota|Camry|2020|null|null"
+      }
+    ],
+    "has_notarial_blank": [
+      {
+        "poa_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov",
+        "blank_id": "1234567890|123456"
+      }
+    ],
+    "created_by": [
+      {
+        "request_id": "З-1234567890",
+        "executor_rnokpp": "1234567890"
+      }
+    ],
+    "about": [
+      {
+        "request_id": "З-1234567890",
+        "subject_rnokpp": "1234567890"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-1234567890",
+        "node_label": "Person",
+        "node_id": "1234567890"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "Organization",
+        "node_id": "1234567890"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "IncomeRecord",
+        "node_id": "1234567890|1234567890|2020|1|101"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "Property",
+        "node_id": "VEHICLE|Toyota|Camry|2020|null|null"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "PowerOfAttorney",
+        "node_id": "1234567890|2020-01-01|2025-01-01|Ivan Ivanovich Ivanov"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "NotarialBlank",
+        "node_id": "1234567890|123456"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "Document",
+        "node_id": "PASSPORT|1234567890|123456"
+      }
+    ]
+  }
+}

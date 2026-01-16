@@ -1,0 +1,62 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "111111",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "KITANA ERNESTIVNA ADELREIVNA",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "ID|TT|111111|ПІВДЕННИМ РВ ГУДМС УКРАЇНИ В МІСТІ ГАЙСИНІ|1999-02-02",
+      "doc_type": "ID",
+      "series": "TT",
+      "number": "111111",
+      "issued_by": "ПІВДЕННИМ РВ ГУДМС УКРАЇНИ В МІСТІ ГАЙСИНІ",
+      "issued_date": "1999-02-02",
+      "expiry_date": null
+    },
+    {
+      "doc_id": "P|ET|611111|ВОД № 2 УГПРЕ ГУДМС України в м. ГАЙСИНІ|1998-04-04",
+      "doc_type": "P",
+      "series": "ET",
+      "number": "611111",
+      "issued_by": "ВОД № 2 УГПРЕ ГУДМС України в м. ГАЙСИНІ",
+      "issued_date": "1998-04-04",
+      "expiry_date": null
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

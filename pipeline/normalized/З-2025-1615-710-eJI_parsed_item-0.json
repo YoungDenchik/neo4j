@@ -1,0 +1,61 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВІФТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДІВНА",
+      "date_birth": "1955-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "111222333444",
+      "basis_request": "2",
+      "application_number": "1",
+      "application_date": "2023-01-01",
+      "period_begin_month": 1,
+      "period_begin_year": 2023,
+      "period_end_month": 1,
+      "period_end_year": 2023,
+      "subject_rnokpp": "2019301234",
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "111222333444",
+        "node_label": "Person",
+        "node_id": "2019301234"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "111222333444",
+        "node_label": "Request",
+        "node_id": "111222333444"
+      }
+    ]
+  }
+}

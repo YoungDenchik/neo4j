@@ -1,0 +1,240 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111122222",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111110",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|1|101",
+      "income_accrued": 1600.67,
+      "income_paid": 0,
+      "tax_charged": 288.12,
+      "tax_transferred": 288.12,
+      "income_type_code": "101",
+      "income_type_description": "SALARY",
+      "period_quarter_month": "Січень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|2|101",
+      "income_accrued": 1618.77,
+      "income_paid": 0,
+      "tax_charged": 291.38,
+      "tax_transferred": 291.38,
+      "income_type_code": "101",
+      "income_type_description": "SALARY",
+      "period_quarter_month": "Лютий",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|3|101",
+      "income_accrued": 1691.57,
+      "income_paid": 0,
+      "tax_charged": 304.48,
+      "tax_transferred": 304.48,
+      "income_type_code": "101",
+      "income_type_description": "SALARY",
+      "period_quarter_month": "Березень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|4|101",
+      "income_accrued": 1637.01,
+      "income_paid": 0,
+      "tax_charged": 294.66,
+      "tax_transferred": 294.66,
+      "income_type_code": "101",
+      "income_type_description": "SALARY",
+      "period_quarter_month": "Квітень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|5|195",
+      "income_accrued": 1691.57,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Травень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|7|195",
+      "income_accrued": 1691.57,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Липень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|8|195",
+      "income_accrued": 1691.57,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Серпень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|9|195",
+      "income_accrued": 1637.01,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Вересень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111122222",
+      "org_edrpou": "81111110",
+      "income_id": "1111122222|81111110|2025|10|195",
+      "income_accrued": 1691.57,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Жовтень",
+      "period_year": 2025,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|1|101"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|2|101"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|3|101"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|4|101"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|5|195"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|7|195"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|8|195"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|9|195"
+      },
+      {
+        "person_rnokpp": "1111122222",
+        "income_id": "1111122222|81111110|2025|10|195"
+      }
+    ],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВІФТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДОВНА",
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "45678901",
+      "name": "АГРО-ЕЛІТ-ПОДІЛЛЯ",
+      "short_name": "ТОВ \"АГРО-ЕЛІТ-ПОДІЛЛЯ\"",
+      "state": "1",
+      "state_text": "зареєстровано",
+      "olf_code": "240",
+      "olf_name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ",
+      "authorised_capital": 1000000,
+      "registration_date": "2021-09-10",
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "99553322",
+      "basis_request": null,
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [
+      {
+        "person_rnokpp": "2019301234",
+        "org_edrpou": "45678901",
+        "role_text": "керівник"
+      }
+    ],
+    "founder_of": [
+      {
+        "person_rnokpp": "2019301234",
+        "org_edrpou": "45678901",
+        "capital": 500000,
+        "role_text": "засновник"
+      },
+      {
+        "person_rnokpp": "2855511223",
+        "org_edrpou": "45678901",
+        "capital": 500000,
+        "role_text": "засновник"
+      }
+    ],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

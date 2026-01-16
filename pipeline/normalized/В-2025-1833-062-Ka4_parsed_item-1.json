@@ -1,0 +1,58 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "Вінницька",
+      "first_name": "Обласна",
+      "middle_name": "Державна",
+      "date_birth": null
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "ВІННИЦЬКА ОБЛАСНА ДЕРЖАВНА АДМІНІСТРАЦІЯ",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2021|06|101",
+      "income_accrued": 20000.0,
+      "income_paid": 16100.0,
+      "tax_charged": 3900.0,
+      "tax_transferred": 3900.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "Червень",
+      "period_year": 2021,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    }
+  ],
+  "relationships": {
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2021|06|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2021|06|101",
+        "org_edrpou": "20028399"
+      }
+    ]
+  }
+}

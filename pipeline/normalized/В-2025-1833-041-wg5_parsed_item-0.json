@@ -1,0 +1,110 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": null
+    },
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|SKODA|OCTAVIA|2012|AB4567CE|TMBJC21Z5C2009988",
+      "owner_rnokpp": "2935512345",
+      "property_type": "VEHICLE",
+      "description": "SKODA, моделі OCTAVIA, рік випуску 2012 р.",
+      "government_reg_number": "AB4567CE",
+      "serial_number": "TMBJC21Z5C2009988",
+      "address_text": null,
+      "area": null,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [
+    {
+      "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+      "notarial_reg_number": "1599",
+      "attested_date": "2021-05-20T10:00:00",
+      "finished_date": "2026-05-20T00:00:00",
+      "witness_name": "м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+      "notary_name": null,
+      "grantor_rnokpp": "2935512345",
+      "representative_rnokpp": "1111111111",
+      "property": {
+        "property_type": null,
+        "description": null,
+        "government_reg_number": null,
+        "serial_number": null,
+        "address_text": null,
+        "area": null
+      },
+      "source_request_id": null
+    }
+  ],
+  "notarial_blanks": [
+    {
+      "blank_id": "ВНС|123456",
+      "serial": "ВНС",
+      "number": "123456"
+    }
+  ],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": "2935512345",
+        "property_id": "VEHICLE|SKODA|OCTAVIA|2012|AB4567CE|TMBJC21Z5C2009988",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+        "grantor_rnokpp": "2935512345"
+      }
+    ],
+    "has_representative": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+        "representative_rnokpp": "1111111111"
+      }
+    ],
+    "has_property": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+        "property_id": "VEHICLE|SKODA|OCTAVIA|2012|AB4567CE|TMBJC21Z5C2009988"
+      }
+    ],
+    "has_notarial_blank": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233), Контактні дані: 2233, м.ВІННИЦЯ, вул. Соборна, буд. 10, оф. 1, тел.:(0432) 55-55-55",
+        "blank_id": "ВНС|123456"
+      }
+    ],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

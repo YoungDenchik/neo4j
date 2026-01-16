@@ -1,0 +1,62 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "32675753",
+      "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ФІНАНСОВА КОМПАНІЯ \"ХАРЕ\"",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "LAND|земельна ділянка|null|null|ГАЙСИНська обл., Бородянський р., с/рада. Козинцівська|0.12",
+      "owner_rnokpp": null,
+      "property_type": "LAND",
+      "description": "земельна ділянка",
+      "government_reg_number": null,
+      "serial_number": null,
+      "address_text": "ГАЙСИНська обл., Бородянський р., с/рада. Козинцівська",
+      "area": 0.12,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": null,
+        "property_id": "LAND|земельна ділянка|null|null|ГАЙСИНська обл., Бородянський р., с/рада. Козинцівська|0.12",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

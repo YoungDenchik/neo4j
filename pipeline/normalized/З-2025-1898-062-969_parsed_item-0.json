@@ -1,0 +1,77 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "11111111",
+      "name": "Тестеров Таурус"
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "executor_edrpou": "11111111",
+      "full_name": "Тестеров Таурус",
+      "position": null,
+      "department": null
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "З-2025-1898-062-969",
+      "basis_request": "6161-ТІТ",
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": 1,
+      "period_begin_year": 2022,
+      "period_end_month": 12,
+      "period_end_year": 2022,
+      "subject_rnokpp": null,
+      "executor_rnokpp": "111115555511"
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [
+      {
+        "request_id": "З-2025-1898-062-969",
+        "executor_rnokpp": "111115555511"
+      }
+    ],
+    "about": [
+      {
+        "request_id": "З-2025-1898-062-969",
+        "subject_rnokpp": "1111111111"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-2025-1898-062-969",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "requests": [
+    {
+      "request_id": "З-1234567890",
+      "basis_request": null,
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": 1,
+      "period_begin_year": 2016,
+      "period_end_month": 12,
+      "period_end_year": 2016,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "relationships": {
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

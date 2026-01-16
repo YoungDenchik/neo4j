@@ -1,0 +1,61 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "111222333444",
+      "basis_request": "6161-ТІТ",
+      "application_number": "6161-ТІТ",
+      "application_date": "2023-01-01",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": "1111111111",
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "111222333444",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "111222333444",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      }
+    ]
+  }
+}

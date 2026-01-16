@@ -1,0 +1,50 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": "null"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "null",
+      "name": "Комунальне підприємство \"Вінницьке міське бюро технічної інвентаризації\"",
+      "short_name": "null",
+      "state": "null",
+      "state_text": "null",
+      "olf_code": "null",
+      "olf_name": "null",
+      "authorised_capital": "null",
+      "registration_date": "null",
+      "termination_date": "null"
+    }
+  ],
+  "properties": [
+    {
+      "property_id": "VEHICLE|null|null|null|null|null",
+      "owner_rnokpp": "2935512345",
+      "property_type": "VEHICLE",
+      "description": "null",
+      "government_reg_number": "null",
+      "serial_number": "null",
+      "address_text": "null",
+      "area": "null",
+      "ownership_type": "null",
+      "since_date": "null",
+      "source_request_id": "null"
+    }
+  ],
+  "relationships": {
+    "owns": [
+      {
+        "person_rnokpp": "2935512345",
+        "property_id": "VEHICLE|null|null|null|null|null",
+        "ownership_type": "null",
+        "since_date": "null"
+      }
+    ]
+  }
+}

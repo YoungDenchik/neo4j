@@ -1,0 +1,196 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1111111111",
+      "full_name_raw": "1111111111",
+      "normalized_name": null,
+      "date_birth": null
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "14253647",
+      "name": "ЗАТ 'ПРОМ-РЕСУРС'",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    },
+    {
+      "edrpou": "88990011",
+      "name": "ТОВ 'МАРКЕТ-ЛЮКС'",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14253647",
+      "income_id": "1111111111|14253647|2005|1|101",
+      "income_accrued": 1350.0,
+      "income_paid": 1174.5,
+      "tax_charged": 175.5,
+      "tax_transferred": 175.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2005,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14253647",
+      "income_id": "1111111111|14253647|2005|2|101",
+      "income_accrued": 1350.0,
+      "income_paid": 1174.5,
+      "tax_charged": 175.5,
+      "tax_transferred": 175.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2005,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14253647",
+      "income_id": "1111111111|14253647|2005|3|101",
+      "income_accrued": 1480.0,
+      "income_paid": 1287.6,
+      "tax_charged": 192.4,
+      "tax_transferred": 192.4,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2005,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14253647",
+      "income_id": "1111111111|14253647|2005|4|101",
+      "income_accrued": 1480.0,
+      "income_paid": 1287.6,
+      "tax_charged": 192.4,
+      "tax_transferred": 192.4,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2005,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "88990011",
+      "income_id": "1111111111|88990011|2005|4|126",
+      "income_accrued": 250.0,
+      "income_paid": 217.5,
+      "tax_charged": 32.5,
+      "tax_transferred": 32.5,
+      "income_type_code": "126",
+      "income_type_description": "Додаткове благо",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2005,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "BONUS_BENEFIT",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|14253647|2005|1|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|14253647|2005|2|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|14253647|2005|3|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|14253647|2005|4|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|88990011|2005|4|126"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|14253647|2005|1|101",
+        "org_edrpou": "14253647"
+      },
+      {
+        "income_id": "1111111111|14253647|2005|2|101",
+        "org_edrpou": "14253647"
+      },
+      {
+        "income_id": "1111111111|14253647|2005|3|101",
+        "org_edrpou": "14253647"
+      },
+      {
+        "income_id": "1111111111|14253647|2005|4|101",
+        "org_edrpou": "14253647"
+      },
+      {
+        "income_id": "1111111111|88990011|2005|4|126",
+        "org_edrpou": "88990011"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

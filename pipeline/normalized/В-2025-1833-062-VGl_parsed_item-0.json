@@ -1,0 +1,152 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "Петренко",
+      "first_name": "Іван",
+      "middle_name": "Іванович",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "Вінницька обласна державна адміністрація",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2020|1|101",
+      "income_accrued": 48000.0,
+      "income_paid": 38640.0,
+      "tax_charged": 9360.0,
+      "tax_transferred": 9360.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2020,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2020|2|101",
+      "income_accrued": 48000.0,
+      "income_paid": 38640.0,
+      "tax_charged": 9360.0,
+      "tax_transferred": 9360.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2020,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2020|3|101",
+      "income_accrued": 51000.0,
+      "income_paid": 41055.0,
+      "tax_charged": 9945.0,
+      "tax_transferred": 9945.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2020,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2020|4|101",
+      "income_accrued": 51000.0,
+      "income_paid": 41055.0,
+      "tax_charged": 9945.0,
+      "tax_transferred": 9945.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2020,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2020|1|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2020|2|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2020|3|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2020|4|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2020|1|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2020|2|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2020|3|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2020|4|101",
+        "org_edrpou": "20028399"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

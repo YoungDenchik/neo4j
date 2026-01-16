@@ -1,0 +1,14 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": "1980-05-15"
+    }
+  ],
+  "relationships": {
+    "child_of": []
+  }
+}

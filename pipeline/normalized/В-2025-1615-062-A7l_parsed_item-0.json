@@ -1,0 +1,49 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "ПРІЗВИЩЕ",
+      "first_name": "ІМ'Я",
+      "middle_name": "ПО БАТЬКОВІ",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2021|1|128 - Соціальні виплати з відповідних бюджетів",
+      "income_accrued": "3800.00",
+      "income_paid": "3800.00",
+      "tax_charged": "0",
+      "tax_transferred": "0",
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "Січень",
+      "period_year": "2021",
+      "result_income": "1",
+      "currency": "UAH",
+      "income_category": "SOCIAL"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "20289123",
+      "name": "ГУ ПФУ У ВІННИЦЬКІЙ ОБЛАСТІ"
+    }
+  ],
+  "relationships": {
+    "earned_income": [
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2021|1|128 - Соціальні виплати з відповідних бюджетів"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2019301234|20289123|2021|1|128 - Соціальні виплати з відповідних бюджетів",
+        "org_edrpou": "20289123"
+      }
+    ]
+  }
+}

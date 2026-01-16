@@ -1,0 +1,85 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВІФТ",
+      "first_name": "МАГДАЛЕНА",
+      "date_birth": "1955-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-1122334455",
+      "basis_request": "НЗ (1-1-1) для всіх типів автомобілів",
+      "application_number": "AB0001KX",
+      "application_date": "2022-12-20",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": "2019301234",
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|LAND CRUISER|null|null|null|3346",
+      "owner_rnokpp": "2019301234",
+      "property_type": "VEHICLE",
+      "description": "LAND CRUISER",
+      "government_reg_number": "AB0001KX",
+      "serial_number": null,
+      "address_text": null,
+      "area": 3346,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": "З-1122334455"
+    }
+  ],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": "2019301234",
+        "property_id": "VEHICLE|LAND CRUISER|null|null|null|3346",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "З-1122334455",
+        "subject_rnokpp": "2019301234"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-1122334455",
+        "node_label": "Person",
+        "node_id": "2019301234"
+      },
+      {
+        "request_id": "З-1122334455",
+        "node_label": "Property",
+        "node_id": "VEHICLE|LAND CRUISER|null|null|null|3346"
+      }
+    ]
+  }
+}

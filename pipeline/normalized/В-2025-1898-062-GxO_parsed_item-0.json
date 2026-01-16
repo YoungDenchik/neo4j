@@ -1,0 +1,253 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "Петренко",
+      "first_name": "Іван",
+      "middle_name": "Іванович",
+      "date_birth": "1975-01-01"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "23456789",
+      "name": "АТ 'МЕХАНІК'",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    },
+    {
+      "edrpou": "87654321",
+      "name": "ПП 'РЕКЛАМА-СЕРВІС'",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-1234-1234-123-123-1234",
+      "basis_request": null,
+      "application_number": "123",
+      "application_date": "2025-12-19T12:45:24",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "23456789",
+      "income_id": "1111111111|23456789|1998|1|101",
+      "income_accrued": 420.0,
+      "income_paid": 365.4,
+      "tax_charged": 54.6,
+      "tax_transferred": 54.6,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "1 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234-1234-123-123-1234"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "23456789",
+      "income_id": "1111111111|23456789|1998|2|101",
+      "income_accrued": 420.0,
+      "income_paid": 365.4,
+      "tax_charged": 54.6,
+      "tax_transferred": 54.6,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "2 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234-1234-123-123-1234"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "23456789",
+      "income_id": "1111111111|23456789|1998|3|101",
+      "income_accrued": 450.0,
+      "income_paid": 391.5,
+      "tax_charged": 58.5,
+      "tax_transferred": 58.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234-1234-123-123-1234"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "23456789",
+      "income_id": "1111111111|23456789|1998|4|101",
+      "income_accrued": 480.0,
+      "income_paid": 417.6,
+      "tax_charged": 62.4,
+      "tax_transferred": 62.4,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234-1234-123-123-1234"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "87654321",
+      "income_id": "1111111111|87654321|1998|2|102",
+      "income_accrued": 120.0,
+      "income_paid": 104.4,
+      "tax_charged": 15.6,
+      "tax_transferred": 15.6,
+      "income_type_code": "102",
+      "income_type_description": "Виплати згiдно з умовами цивiльно-правового договору",
+      "period_quarter_month": "2 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "CONTRACT",
+      "source_request_id": "З-1234-1234-123-123-1234"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|23456789|1998|1|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|23456789|1998|2|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|23456789|1998|3|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|23456789|1998|4|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|87654321|1998|2|102"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|23456789|1998|1|101",
+        "org_edrpou": "23456789"
+      },
+      {
+        "income_id": "1111111111|23456789|1998|2|101",
+        "org_edrpou": "23456789"
+      },
+      {
+        "income_id": "1111111111|23456789|1998|3|101",
+        "org_edrpou": "23456789"
+      },
+      {
+        "income_id": "1111111111|23456789|1998|4|101",
+        "org_edrpou": "23456789"
+      },
+      {
+        "income_id": "1111111111|87654321|1998|2|102",
+        "org_edrpou": "87654321"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "subject_rnokpp": "1111111111"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "Organization",
+        "node_id": "23456789"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "Organization",
+        "node_id": "87654321"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|23456789|1998|1|101"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|23456789|1998|2|101"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|23456789|1998|3|101"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|23456789|1998|4|101"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|87654321|1998|2|102"
+      },
+      {
+        "request_id": "З-1234-1234-123-123-1234",
+        "node_label": "Request",
+        "node_id": "З-1234-1234-123-123-1234"
+      }
+    ]
+  }
+}

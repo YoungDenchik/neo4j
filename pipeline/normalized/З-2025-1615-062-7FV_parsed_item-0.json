@@ -1,0 +1,26 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВФІТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДІВНА",
+      "date_birth": "1955-04-24"
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "executor_edrpou": "11111111",
+      "full_name": "Тестеров Таурус"
+    }
+  ],
+  "relationships": {
+    "created_by": [
+      {
+        "request_id": null,
+        "executor_rnokpp": "111115555511"
+      }
+    ]
+  }
+}

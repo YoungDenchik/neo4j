@@ -1,0 +1,25 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "full_name": "Тестеров Таурус"
+    }
+  ],
+  "relationships": {
+    "created_by": [
+      {
+        "request_id": null,
+        "executor_rnokpp": "111115555511"
+      }
+    ]
+  }
+}

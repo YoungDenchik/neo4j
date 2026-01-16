@@ -1,0 +1,51 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "СВІФТ",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "I-AM|I-AM|654321|Відділ державної реєстрації актів цивільного стану у місті Вінниці|1987-05-15",
+      "doc_type": "Certificate",
+      "series": "I-AM",
+      "number": "654321",
+      "issued_by": "Відділ державної реєстрації актів цивільного стану у місті Вінниці",
+      "issued_date": "1987-05-15"
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": null,
+        "node_label": "Document",
+        "node_id": "I-AM|I-AM|654321|Відділ державної реєстрації актів цивільного стану у місті Вінниці|1987-05-15"
+      }
+    ]
+  }
+}

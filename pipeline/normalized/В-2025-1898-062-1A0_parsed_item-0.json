@@ -1,0 +1,55 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "3-####-####-###-###",
+      "basis_request": null,
+      "application_number": "###",
+      "application_date": "2023-06-13T12:50:24",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "Request",
+        "node_id": "3-####-####-###-###"
+      }
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111110",
+      "name": "ТОВ 'ФІРМА - ОБЕРІГ'"
+    },
+    {
+      "edrpou": "1111111111",
+      "name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА"
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111110",
+      "income_id": "1111111111|81111110|2023|1|195",
+      "income_accrued": 11943.89,
+      "income_paid": 0,
+      "tax_charged": 2149.9,
+      "tax_transferred": 2149.9,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Вересень",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "RENT"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111110",
+      "income_id": "1111111111|81111110|2023|2|195",
+      "income_accrued": 1356.27,
+      "income_paid": 0,
+      "tax_charged": 244.13,
+      "tax_transferred": 244.13,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Жовтень",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "RENT"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111110",
+      "income_id": "1111111111|81111110|2023|3|195",
+      "income_accrued": 1312.52,
+      "income_paid": 15968.94,
+      "tax_charged": 480.38,
+      "tax_transferred": 480.38,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Листопад",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "RENT"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111110",
+      "income_id": "1111111111|81111110|2023|4|195",
+      "income_accrued": 1356.25,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду, суборенду, емфітевзис",
+      "period_quarter_month": "Грудень",
+      "period_year": 2023,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "RENT"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2023|1|503",
+      "income_accrued": 525000,
+      "tax_charged": 10500,
+      "income_type_code": "503",
+      "income_type_description": "Податкова декларація платника єдиного податку третьої групи на період дії воєнного, надзвичайного стану в Україні",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2023,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2023|2|506",
+      "income_accrued": 4180890,
+      "tax_charged": 83617.8,
+      "income_type_code": "506",
+      "income_type_description": "Податкова декларація платника єдиного податку третьої групи на період дії воєнного, надзвичайного стану в Україні",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2023,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2023|3|509",
+      "income_accrued": 3634133.93,
+      "tax_charged": 72682.68,
+      "income_type_code": "509",
+      "income_type_description": "Податкова декларація платника єдиного податку третьої групи на період дії воєнного, надзвичайного стану в Україні",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2023,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2023|4|512",
+      "income_accrued": 3013751.64,
+      "tax_charged": 150687.58,
+      "income_type_code": "512",
+      "income_type_description": "Податкова декларація платника єдиного податку - фізичної особи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2023,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111110|2023|1|195"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111110|2023|2|195"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111110|2023|3|195"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111110|2023|4|195"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2023|1|503"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2023|2|506"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2023|3|509"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2023|4|512"
+      }
+    ],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

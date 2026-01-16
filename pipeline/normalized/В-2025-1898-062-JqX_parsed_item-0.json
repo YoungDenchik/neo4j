@@ -1,0 +1,91 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "1111111111",
+      "name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "3-####-####-###-###",
+      "basis_request": null,
+      "application_number": "###",
+      "application_date": "2023-06-13T12:40:31",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2018|4 квартал|512",
+      "income_accrued": "1499973",
+      "income_paid": "0",
+      "tax_charged": "0",
+      "tax_transferred": "0",
+      "income_type_code": "512",
+      "income_type_description": "Податкова декларація платника єдиного податку - фізичної особи (першої та другої груп)",
+      "period_quarter_month": "4 квартал",
+      "period_year": "2018",
+      "result_income": "2",
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "3-####-####-###-###"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|1111111111|2018|4 квартал|512"
+      }
+    ],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|1111111111|2018|4 квартал|512"
+      }
+    ]
+  }
+}

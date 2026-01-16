@@ -1,0 +1,66 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА",
+      "middle_name": "АДЕЛЬРЕЇВНА",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "81111116",
+      "name": "АТ 'УНІВЕРСАЛ БАНК'",
+      "short_name": "АТ 'УНІВЕРСАЛ БАНК'"
+    },
+    {
+      "edrpou": "1111111111",
+      "name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА"
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111116",
+      "income_id": "1111111111|81111116|2020|3|126",
+      "income_accrued": 194.24,
+      "income_paid": 194.24,
+      "tax_charged": 34.97,
+      "tax_transferred": 34.97,
+      "income_type_code": "126",
+      "income_type_description": "Додаткове благо",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2020,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "BONUS_BENEFIT"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2020|4|512",
+      "income_accrued": 4291295,
+      "tax_charged": 214564.75,
+      "income_type_code": "512",
+      "income_type_description": "Податкова декларація платника єдиного податку - фізичної особи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2020,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    }
+  ],
+  "relationships": {
+    "paid_by": [
+      {
+        "income_id": "1111111111|81111116|2020|3|126",
+        "org_edrpou": "81111116"
+      },
+      {
+        "income_id": "1111111111|1111111111|2020|4|512",
+        "org_edrpou": "1111111111"
+      }
+    ]
+  }
+}

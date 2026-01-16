@@ -1,0 +1,62 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|СЕДАН|null|null|м. ГАЙСИН, Оболонський р-н|2995",
+      "owner_rnokpp": "1111111111",
+      "property_type": "VEHICLE",
+      "description": "A6",
+      "government_reg_number": "АА1111АА",
+      "serial_number": "ABC611119",
+      "address_text": "м. ГАЙСИН, Оболонський р-н",
+      "area": 2995,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": "1111111111",
+        "property_id": "VEHICLE|СЕДАН|null|null|м. ГАЙСИН, Оболонський р-н|2995",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": null,
+        "node_label": "Property",
+        "node_id": "VEHICLE|СЕДАН|null|null|м. ГАЙСИН, Оболонський р-н|2995"
+      }
+    ]
+  }
+}

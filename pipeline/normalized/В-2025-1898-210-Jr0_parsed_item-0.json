@@ -1,0 +1,43 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "Ivanov",
+      "first_name": "Ivan",
+      "middle_name": "Ivanovich",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1234567890",
+      "full_name_raw": "Ivan Ivanovich Ivanov",
+      "normalized_name": "Ivan Ivanov",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

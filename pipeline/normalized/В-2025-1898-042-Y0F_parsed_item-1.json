@@ -1,0 +1,98 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВІФТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДОВНА"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "2019301234",
+      "full_name_raw": "СВІФТ МАГДАЛЕНА СИГІЗМУНДОВНА",
+      "normalized_name": "СВІФТ МАГДАЛЕНА СИГІЗМУНДОВНА"
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|Житловий будинок|null|null|Вінницька обл., с. Агрономічне, вул. Лісва, буд. 7-Б|252.4",
+      "owner_rnokpp": "2019301234",
+      "property_type": "VEHICLE",
+      "description": "Житловий будинок",
+      "government_reg_number": "null",
+      "serial_number": "null",
+      "address_text": "Вінницька обл., с. Агрономічне, вул. Лісва, буд. 7-Б",
+      "area": 252.4
+    }
+  ],
+  "power_of_attorney": [
+    {
+      "poa_id": "2105|2023-02-10T14:15:00|2028-02-10T00:00:00|м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+      "notarial_reg_number": "2105",
+      "attested_date": "2023-02-10T14:15:00",
+      "finished_date": "2028-02-10T00:00:00",
+      "witness_name": "м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+      "notary_name": "null",
+      "grantor_rnokpp": "2019301234",
+      "representative_rnokpp": "1111111111",
+      "property": {
+        "property_type": "VEHICLE",
+        "description": "Житловий будинок",
+        "government_reg_number": "null",
+        "serial_number": "null",
+        "address_text": "Вінницька обл., с. Агрономічне, вул. Лісва, буд. 7-Б",
+        "area": 252.4
+      },
+      "source_request_id": "null"
+    }
+  ],
+  "notarial_blanks": [
+    {
+      "blank_id": "ВНС|998800",
+      "serial": "ВНС",
+      "number": "998800"
+    }
+  ],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [
+      {
+        "poa_id": "2105|2023-02-10T14:15:00|2028-02-10T00:00:00|м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+        "grantor_rnokpp": "2019301234"
+      }
+    ],
+    "has_representative": [
+      {
+        "poa_id": "2105|2023-02-10T14:15:00|2028-02-10T00:00:00|м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+        "representative_rnokpp": "1111111111"
+      }
+    ],
+    "has_property": [
+      {
+        "poa_id": "2105|2023-02-10T14:15:00|2028-02-10T00:00:00|м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+        "property_id": "VEHICLE|Житловий будинок|null|null|Вінницька обл., с. Агрономічне, вул. Лісва, буд. 7-Б|252.4"
+      }
+    ],
+    "has_notarial_blank": [
+      {
+        "poa_id": "2105|2023-02-10T14:15:00|2028-02-10T00:00:00|м.ВІННИЦЯ, Вінницький районний, Ковальчук І.І. (4455)",
+        "blank_id": "ВНС|998800"
+      }
+    ],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

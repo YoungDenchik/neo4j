@@ -1,0 +1,189 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "19283746",
+      "name": "",
+      "short_name": "ПП 'ВЕГА-СТАР'",
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    },
+    {
+      "edrpou": "55667788",
+      "name": "",
+      "short_name": "ТОВ 'АГРО-ЛЕНД'",
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "19283746",
+      "income_id": "1111111111|19283746|2007|1|101",
+      "income_accrued": 2950.0,
+      "income_paid": 2507.5,
+      "tax_charged": 442.5,
+      "tax_transferred": 442.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2007,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "19283746",
+      "income_id": "1111111111|19283746|2007|2|101",
+      "income_accrued": 2950.0,
+      "income_paid": 2507.5,
+      "tax_charged": 442.5,
+      "tax_transferred": 442.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2007,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "19283746",
+      "income_id": "1111111111|19283746|2007|3|101",
+      "income_accrued": 3100.0,
+      "income_paid": 2635.0,
+      "tax_charged": 465.0,
+      "tax_transferred": 465.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2007,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "19283746",
+      "income_id": "1111111111|19283746|2007|4|101",
+      "income_accrued": 3100.0,
+      "income_paid": 2635.0,
+      "tax_charged": 465.0,
+      "tax_transferred": 465.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2007,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "55667788",
+      "income_id": "1111111111|55667788|2007|4|195",
+      "income_accrued": 850.0,
+      "income_paid": 722.5,
+      "tax_charged": 127.5,
+      "tax_transferred": 127.5,
+      "income_type_code": "195",
+      "income_type_description": "Надання зем. ділянки с/г призначення, майнового паю в лізинг, оренду",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2007,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "RENT",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|19283746|2007|1|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|19283746|2007|2|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|19283746|2007|3|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|19283746|2007|4|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|55667788|2007|4|195"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|19283746|2007|1|101",
+        "org_edrpou": "19283746"
+      },
+      {
+        "income_id": "1111111111|19283746|2007|2|101",
+        "org_edrpou": "19283746"
+      },
+      {
+        "income_id": "1111111111|19283746|2007|3|101",
+        "org_edrpou": "19283746"
+      },
+      {
+        "income_id": "1111111111|19283746|2007|4|101",
+        "org_edrpou": "19283746"
+      },
+      {
+        "income_id": "1111111111|55667788|2007|4|195",
+        "org_edrpou": "55667788"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

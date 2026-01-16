@@ -1,0 +1,119 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "null",
+      "first_name": "null",
+      "middle_name": "null",
+      "date_birth": "null"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111119",
+      "name": "ТОВ 'ДИЗАЙН++'",
+      "short_name": "null",
+      "state": "null",
+      "state_text": "null",
+      "olf_code": "null",
+      "olf_name": "null",
+      "authorised_capital": "null",
+      "registration_date": "null",
+      "termination_date": "null"
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111119",
+      "income_id": "1111111111|81111119|2014|3|101",
+      "income_accrued": "1300",
+      "income_paid": "1300",
+      "tax_charged": "187.98",
+      "tax_transferred": "187.98",
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": "2014",
+      "result_income": "1",
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "null"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111119",
+      "income_id": "1111111111|81111119|2014|4|101",
+      "income_accrued": "2145",
+      "income_paid": "2145",
+      "tax_charged": "310.17",
+      "tax_transferred": "310.17",
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": "2014",
+      "result_income": "1",
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "null"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "81111119",
+      "income_id": "1111111111|81111119|2014|4|128",
+      "income_accrued": "5262.72",
+      "income_paid": "0",
+      "tax_charged": "0",
+      "tax_transferred": "0",
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "4 квартал",
+      "period_year": "2014",
+      "result_income": "1",
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": "null"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|81111119|2014|3|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|81111119|2014|3|101",
+        "org_edrpou": "81111119"
+      },
+      {
+        "income_id": "1111111111|81111119|2014|4|101",
+        "org_edrpou": "81111119"
+      },
+      {
+        "income_id": "1111111111|81111119|2014|4|128",
+        "org_edrpou": "81111119"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

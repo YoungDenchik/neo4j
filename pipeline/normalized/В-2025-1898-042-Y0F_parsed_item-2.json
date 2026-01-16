@@ -1,0 +1,123 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА",
+      "middle_name": "АДЕЛЬРЕЇВНА",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1111111111",
+      "full_name_raw": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "normalized_name": "КІТАНА ЕРНЕСТІВНА АДЕЛЬРЕЇВНА",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "85468721",
+      "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"СПЕЙС Х\"",
+      "short_name": "СПЕЙС Х",
+      "state": "1",
+      "state_text": "Зареєстровано",
+      "olf_code": "110",
+      "olf_name": "Товариство з обмеженою відповідальністю",
+      "authorised_capital": 100000,
+      "registration_date": "2020-01-01",
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|MERCEDES-BENZ, моделі GLS 400, рік випуску 2022 р.|АІ6437КА|WinCode2|null|null",
+      "owner_rnokpp": "1111111111",
+      "property_type": "VEHICLE",
+      "description": "MERCEDES-BENZ, моделі GLS 400, рік випуску 2022 р.",
+      "government_reg_number": "АІ6437КА",
+      "serial_number": "WinCode2",
+      "address_text": null,
+      "area": null,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [
+    {
+      "poa_id": "6543|2022-08-17T00:00:00|2025-08-17T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+      "notarial_reg_number": "6543",
+      "attested_date": "2022-08-17T00:00:00",
+      "finished_date": "2025-08-17T00:00:00",
+      "witness_name": "м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+      "notary_name": null,
+      "grantor_rnokpp": "1111111111",
+      "representative_rnokpp": "1111111111",
+      "property": {
+        "property_type": "VEHICLE",
+        "description": "MERCEDES-BENZ, моделі GLS 400, рік випуску 2022 р.",
+        "government_reg_number": "АІ6437КА",
+        "serial_number": "WinCode2",
+        "address_text": null,
+        "area": null
+      },
+      "source_request_id": null
+    }
+  ],
+  "notarial_blanks": [
+    {
+      "blank_id": "НРР|676767",
+      "serial": "НРР",
+      "number": "676767"
+    }
+  ],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [
+      {
+        "person_rnokpp": "1111111111",
+        "property_id": "VEHICLE|MERCEDES-BENZ, моделі GLS 400, рік випуску 2022 р.|АІ6437КА|WinCode2|null|null",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ],
+    "has_grantor": [
+      {
+        "poa_id": "6543|2022-08-17T00:00:00|2025-08-17T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+        "grantor_rnokpp": "1111111111"
+      }
+    ],
+    "has_representative": [
+      {
+        "poa_id": "6543|2022-08-17T00:00:00|2025-08-17T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+        "representative_rnokpp": "1111111111"
+      }
+    ],
+    "has_property": [
+      {
+        "poa_id": "6543|2022-08-17T00:00:00|2025-08-17T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+        "property_id": "VEHICLE|MERCEDES-BENZ, моделі GLS 400, рік випуску 2022 р.|АІ6437КА|WinCode2|null|null"
+      }
+    ],
+    "has_notarial_blank": [
+      {
+        "poa_id": "6543|2022-08-17T00:00:00|2025-08-17T00:00:00|м.ГАЙСИН, ГАЙСИНський міський, Синельникова В.Г. (6411), Контактні дані: 02124, м.ГАЙСИН, вул. Банкова, буд. 1/10, кв.4, тел.:(050) 156-12-11, (044) 655-02-11",
+        "blank_id": "НРР|676767"
+      }
+    ],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

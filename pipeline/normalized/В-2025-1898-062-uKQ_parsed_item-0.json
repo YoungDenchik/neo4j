@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "3-####-####-###-###",
+      "basis_request": null,
+      "application_number": "###",
+      "application_date": "2023-06-13T12:40:20",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "relationships": {
+    "created_by": [
+      {
+        "request_id": "3-####-####-###-###",
+        "executor_rnokpp": null
+      }
+    ],
+    "about": [
+      {
+        "request_id": "3-####-####-###-###",
+        "subject_rnokpp": null
+      }
+    ]
+  }
+}

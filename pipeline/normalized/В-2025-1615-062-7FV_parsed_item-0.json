@@ -1,0 +1,115 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2018|1|128",
+      "income_accrued": 9600,
+      "income_paid": 9600,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2018,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2018|2|128",
+      "income_accrued": 9600,
+      "income_paid": 9600,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2018,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2018|3|128",
+      "income_accrued": 9900,
+      "income_paid": 9900,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2018,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2018|4|128",
+      "income_accrued": 9900,
+      "income_paid": 9900,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2018,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "20289123",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "relationships": {
+    "paid_by": [
+      {
+        "income_id": "2019301234|20289123|2018|1|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2018|2|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2018|3|128",
+        "org_edrpou": "20289123"
+      },
+      {
+        "income_id": "2019301234|20289123|2018|4|128",
+        "org_edrpou": "20289123"
+      }
+    ]
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "Петренко",
+      "first_name": "Іван",
+      "middle_name": "Іванович",
+      "date_birth": "1970-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "14354657",
+      "name": "ВАТ 'ЗАВОД ПРОГРЕС'",
+      "short_name": "ЗАВОД ПРОГРЕС",
+      "olf_code": "14",
+      "olf_name": "Промисловість"
+    },
+    {
+      "edrpou": "00998877",
+      "name": "РАЙОННИЙ ЦЕНТР ЗАЙНЯТОСТІ",
+      "olf_code": "15",
+      "olf_name": "Державне управління"
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14354657",
+      "income_id": "1111111111|14354657|1999|1|101",
+      "income_accrued": 510,
+      "income_paid": 443.7,
+      "tax_charged": 66.3,
+      "tax_transferred": 66.3,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "1 квартал",
+      "period_year": 1999,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14354657",
+      "income_id": "1111111111|14354657|1999|2|101",
+      "income_accrued": 540,
+      "income_paid": 469.8,
+      "tax_charged": 70.2,
+      "tax_transferred": 70.2,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "2 квартал",
+      "period_year": 1999,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14354657",
+      "income_id": "1111111111|14354657|1999|3|101",
+      "income_accrued": 555,
+      "income_paid": 482.85,
+      "tax_charged": 72.15,
+      "tax_transferred": 72.15,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": 1999,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "14354657",
+      "income_id": "1111111111|14354657|1999|4|101",
+      "income_accrued": 580,
+      "income_paid": 504.6,
+      "tax_charged": 75.4,
+      "tax_transferred": 75.4,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": 1999,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "00998877",
+      "income_id": "1111111111|00998877|1999|1|128",
+      "income_accrued": 85,
+      "income_paid": 85,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "1 квартал",
+      "period_year": 1999,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL"
+    }
+  ],
+  "relationships": {
+    "paid_by": [
+      {
+        "income_id": "1111111111|14354657|1999|1|101",
+        "org_edrpou": "14354657"
+      },
+      {
+        "income_id": "1111111111|14354657|1999|2|101",
+        "org_edrpou": "14354657"
+      },
+      {
+        "income_id": "1111111111|14354657|1999|3|101",
+        "org_edrpou": "14354657"
+      },
+      {
+        "income_id": "1111111111|14354657|1999|4|101",
+        "org_edrpou": "14354657"
+      },
+      {
+        "income_id": "1111111111|00998877|1999|1|128",
+        "org_edrpou": "00998877"
+      }
+    ]
+  }
+}

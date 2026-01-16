@@ -1,0 +1,62 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1987-04-24"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "11111111",
+      "name": null,
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "executor_edrpou": "11111111",
+      "full_name": "Тестеров Таурус",
+      "position": null,
+      "department": null
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "З-2025-1898-062-ftx",
+      "basis_request": "6161-ТІТ",
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": 1,
+      "period_begin_year": 2006,
+      "period_end_month": 12,
+      "period_end_year": 2006,
+      "subject_rnokpp": null,
+      "executor_rnokpp": "111115555511"
+    }
+  ],
+  "relationships": {
+    "created_by": [
+      {
+        "request_id": "З-2025-1898-062-ftx",
+        "executor_rnokpp": "111115555511"
+      }
+    ],
+    "about": [
+      {
+        "request_id": "З-2025-1898-062-ftx",
+        "subject_rnokpp": "1111111111"
+      }
+    ]
+  }
+}

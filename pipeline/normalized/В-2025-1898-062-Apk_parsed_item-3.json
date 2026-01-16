@@ -1,0 +1,52 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "КІТАНА",
+      "first_name": "ЕРНЕСТІВНА",
+      "middle_name": "АДЕЛЬРЕЇВНА",
+      "date_birth": "1990-01-01"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "1111111111",
+      "name": "АДЕЛЬРЕЇВНА КІТАНА ЕРНЕСТІВНА",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "1111111111",
+      "income_id": "1111111111|1111111111|2021|4|512",
+      "income_accrued": 5714906,
+      "income_paid": 0,
+      "tax_charged": 285745.3,
+      "tax_transferred": 0,
+      "income_type_code": "512",
+      "income_type_description": "Податкова декларація платника єдиного податку - фізичної особи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2021,
+      "result_income": 2,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    }
+  ],
+  "relationships": {
+    "paid_by": [
+      {
+        "income_id": "1111111111|1111111111|2021|4|512",
+        "org_edrpou": "1111111111"
+      }
+    ]
+  }
+}

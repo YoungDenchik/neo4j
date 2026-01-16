@@ -1,0 +1,67 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВФІТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДІВНА",
+      "date_birth": "1955-04-24"
+    }
+  ],
+  "organizations": [],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "executor_edrpou": "11111111",
+      "full_name": "Тестеров Таурус",
+      "position": null,
+      "department": null
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "З-2025-1615-062-YrG",
+      "basis_request": "6161-ТІТ",
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": 1,
+      "period_begin_year": 2020,
+      "period_end_month": 12,
+      "period_end_year": 2020,
+      "subject_rnokpp": null,
+      "executor_rnokpp": "111115555511"
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [
+      {
+        "request_id": "З-2025-1615-062-YrG",
+        "executor_rnokpp": "111115555511"
+      }
+    ],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "З-2025-1615-062-YrG",
+        "node_label": "Person",
+        "node_id": "2019301234"
+      }
+    ]
+  }
+}

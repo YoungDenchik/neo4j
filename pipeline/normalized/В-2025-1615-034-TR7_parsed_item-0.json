@@ -1,0 +1,54 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "35123456",
+      "name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ \"ВІННИЦЯ-ПРОМ-ІНВЕСТ\"",
+      "short_name": "ТОВ \"ВІННИЦЯ-ПРОМ-ІНВЕСТ\"",
+      "state": "3",
+      "state_text": "припинено",
+      "olf_code": "240",
+      "olf_name": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ",
+      "authorised_capital": 5000000,
+      "registration_date": null,
+      "termination_date": "2019-05-15"
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [
+      {
+        "person_rnokpp": "2019301234",
+        "org_edrpou": "35123456",
+        "capital": 2500000,
+        "role_text": "засновник"
+      },
+      {
+        "person_rnokpp": null,
+        "org_edrpou": "35123456",
+        "capital": 2500000,
+        "role_text": "засновник"
+      }
+    ],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

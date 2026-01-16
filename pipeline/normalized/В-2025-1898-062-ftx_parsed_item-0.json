@@ -1,0 +1,41 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "3-####-####-###-###",
+      "application_number": "###",
+      "application_date": "2023-06-13T12:45:16",
+      "subject_rnokpp": "1111111111"
+    }
+  ],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "3-####-####-###-###",
+        "node_label": "Person",
+        "node_id": "1111111111"
+      }
+    ],
+    "provided": []
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [
+    {
+      "alias_id": "1111111111",
+      "full_name_raw": "АДЕЛЬРЕЇВНА К.Е.",
+      "normalized_name": null,
+      "date_birth": null
+    }
+  ],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [
+    {
+      "property_id": "VEHICLE|SKODA, моделі OCTAVIA, рік випуску 2012 р.|AB4567CE|TMBJC21Z5C2009988|null|null",
+      "owner_rnokpp": "2935512345",
+      "property_type": "VEHICLE",
+      "description": "SKODA, моделі OCTAVIA, рік випуску 2012 р.",
+      "government_reg_number": "AB4567CE",
+      "serial_number": "TMBJC21Z5C2009988",
+      "address_text": null,
+      "area": null,
+      "ownership_type": null,
+      "since_date": null,
+      "source_request_id": null
+    }
+  ],
+  "power_of_attorney": [
+    {
+      "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+      "notarial_reg_number": "1599",
+      "attested_date": "2021-05-20T10:00:00",
+      "finished_date": "2026-05-20T00:00:00",
+      "witness_name": "м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+      "notary_name": null,
+      "grantor_rnokpp": "2935512345",
+      "representative_rnokpp": "1111111111",
+      "property": {
+        "property_type": null,
+        "description": null,
+        "government_reg_number": null,
+        "serial_number": null,
+        "address_text": null,
+        "area": null
+      },
+      "source_request_id": null
+    }
+  ],
+  "notarial_blanks": [
+    {
+      "blank_id": "ВНС|123456",
+      "serial": "ВНС",
+      "number": "123456"
+    }
+  ],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+        "grantor_rnokpp": "2935512345"
+      }
+    ],
+    "has_representative": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+        "representative_rnokpp": "1111111111"
+      }
+    ],
+    "has_property": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+        "property_id": "VEHICLE|SKODA, моделі OCTAVIA, рік випуску 2012 р.|AB4567CE|TMBJC21Z5C2009988|null|null"
+      }
+    ],
+    "has_notarial_blank": [
+      {
+        "poa_id": "1599|2021-05-20T10:00:00|2026-05-20T00:00:00|м.ВІННИЦЯ, Вінницький міський, Петренко П.П. (2233)",
+        "blank_id": "ВНС|123456"
+      }
+    ],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

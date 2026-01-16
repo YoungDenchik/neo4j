@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "property_id": "VEHICLE|null|null|null|null|null",
+      "property_type": "VEHICLE",
+      "description": "Sex",
+      "government_reg_number": null,
+      "serial_number": null,
+      "address_text": null,
+      "area": null
+    }
+  ],
+  "relationships": {
+    "owns": [
+      {
+        "person_rnokpp": null,
+        "property_id": "VEHICLE|null|null|null|null|null",
+        "ownership_type": null,
+        "since_date": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2019301234",
+      "org_edrpou": "20289123",
+      "income_id": "2019301234|20289123|2021|12|128",
+      "income_accrued": 3850.0,
+      "income_paid": 3850.0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Соціальні виплати з відповідних бюджетів",
+      "period_quarter_month": "Грудень",
+      "period_year": 2021,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "20289123",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "relationships": {
+    "earned_income": [
+      {
+        "person_rnokpp": "2019301234",
+        "income_id": "2019301234|20289123|2021|12|128"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2019301234|20289123|2021|12|128",
+        "org_edrpou": "20289123"
+      }
+    ]
+  }
+}

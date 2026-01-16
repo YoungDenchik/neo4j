@@ -1,0 +1,70 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1234567890",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": "1980-01-01"
+    },
+    {
+      "rnokpp": "0987654321",
+      "last_name": "АДЕЛЬРЕЇВНА",
+      "first_name": "КІТАНА",
+      "middle_name": "ЕРНЕСТІВНА",
+      "date_birth": "1982-02-02"
+    },
+    {
+      "rnokpp": "5678901234",
+      "last_name": "АДЕЛЬРЕЇВА",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "ЕДМУНДІВНА",
+      "date_birth": "2016-07-08"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "I-AM|445566",
+      "doc_type": "Свідоцтво про народження",
+      "series": "I-AM",
+      "number": "445566",
+      "issued_by": "Відділ державної реєстрації актів цивільного стану у місті Вінниці",
+      "issued_date": "2016-07-15"
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [
+      {
+        "child_rnokpp": "5678901234",
+        "parent_rnokpp": "1234567890"
+      }
+    ],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "З-2345",
+        "node_label": "Document",
+        "node_id": "I-AM|445566"
+      }
+    ]
+  }
+}

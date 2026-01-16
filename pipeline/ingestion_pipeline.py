@@ -1,201 +1,295 @@
 import json
 import os
-from typing import Iterator
 
-from repositories.registry_repo import RegistryRepository
-from repositories.mutation_repo import GraphMutationRepository
-from pipeline.normalizer.core import LLMNormalizer
-from pipeline.normalizer.converter import  NormalizationResult, convert_normalized_data
+from domain.enums import NodeLabel, RelType
+from repositories.ingest_repo import GraphRepository
 
 
 class IngestionPipeline:
-    def __init__(self, parsed_dir: str) -> None:
-        self.parsed_dir = parsed_dir
-        self.normalizer = LLMNormalizer()
-        self.registry_repo = RegistryRepository()
-        self.mutation_repo = GraphMutationRepository()
 
-    @staticmethod
-    def _iter_parsed_files(parsed_dir: str) -> Iterator[str]:
-        for root, dirs, files in os.walk(parsed_dir):
+    def __init__(self, normalized_dir, repo=None):
+        self.normalized_dir = normalized_dir
+        self.repo = repo or GraphRepository()
+
+    def _iter_files(self):
+        for root, dirs, files in os.walk(self.normalized_dir):
             for name in files:
-                if name == "parsed.json":
+                if name.lower().endswith(".json"):
                     yield os.path.join(root, name)
 
-    def _load_items_from_file(self, path: str) -> list:
+    @staticmethod
+    def _load_json(path):
         try:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            if isinstance(data, dict) and "items" in data:
-                items = data["items"]
-                if isinstance(items, list):
-                    return items
-        except Exception:
-            pass
-        return []
+            return data if isinstance(data, dict) else None
+        except Exception as e:
+            print(f"Failed to load JSON from {path}: {e}")
+            return None
 
-    def run(self) -> None:
-        self.registry_repo.ensure_constraints()
+    def _merge_entity(self, label, data):
+        id_key = GraphRepository.ID_KEYS.get(label)
+        if not id_key:
+            return
+        id_value = data.get(id_key)
+        if not id_value:
+            return
+        key_props = {id_key: id_value}
+        self.repo.merge_node(label=label, key_props=key_props, set_props=data)
 
-        for file_path in self._iter_parsed_files(self.parsed_dir):
-            items = self._load_items_from_file(file_path)
-            for item in items:
+    def _persist_entities(self, data):
+        entity_mapping = {
+            "persons": NodeLabel.PERSON,
+            "person_aliases": NodeLabel.PERSON_ALIAS,
+            "organizations": NodeLabel.ORGANIZATION,
+            "executors": NodeLabel.EXECUTOR,
+            "requests": NodeLabel.REQUEST,
+            "income_records": NodeLabel.INCOME_RECORD,
+            "properties": NodeLabel.PROPERTY,
+            "power_of_attorney": NodeLabel.POWER_OF_ATTORNEY,
+            "notarial_blanks": NodeLabel.NOTARIAL_BLANK,
+            "documents": NodeLabel.DOCUMENT,
+        }
+        for list_key, label in entity_mapping.items():
+            items = data.get(list_key) or []
+            if not isinstance(items, list):
+                continue
+            for obj in items:
+                if not isinstance(obj, dict):
+                    continue
                 try:
-                    normalised = self.normalizer.normalize(item)
-                    norm_result = convert_normalized_data(normalised)
-                    self._persist_entities(norm_result)
-                    self._persist_relationships(norm_result)
-                except Exception:
+                    self._merge_entity(label, obj)
+                except Exception as e:
+                    print(f"Failed to merge {label.value} entity: {e}")
                     continue
 
-    def _persist_entities(self, result: NormalizationResult) -> None:
-        for person in result.persons:
+    def _persist_relationships(self, data):
+        relationships = data.get("relationships")
+        if not isinstance(relationships, dict):
+            return
+        for rel_type_key, rel_list in relationships.items():
+            if not isinstance(rel_list, list):
+                continue
             try:
-                self.registry_repo.merge_person(person)
-            except Exception:
-                pass
-        for org in result.organizations:
-            try:
-                self.registry_repo.merge_organization(org)
-            except Exception:
-                pass
-        for income in result.income_records:
-            try:
-                self.registry_repo.merge_income_record(income)
-            except Exception:
-                pass
-        for prop in result.properties:
-            try:
-                self.registry_repo.merge_property(prop)
-            except Exception:
-                pass
-        for request in result.requests:
-            try:
-                self.registry_repo.merge_request(request)
-            except Exception:
-                pass
-        for executor in result.executors:
-            try:
-                self.registry_repo.merge_executor(executor)
-            except Exception:
-                pass
-        for poa in result.poas:
-            try:
-                self.registry_repo.merge_power_of_attorney(poa)
-            except Exception:
-                pass
+                rel_enum = RelType[rel_type_key.upper()]
+            except KeyError:
+                print(f"Unknown relationship type: {rel_type_key}")
+                continue
+            if rel_enum is RelType.PROVIDED:
+                for rel in rel_list:
+                    if not isinstance(rel, dict):
+                        continue
+                    request_id = rel.get("request_id")
+                    node_label_name = rel.get("node_label")
+                    node_id = rel.get("node_id")
+                    if not (request_id and node_label_name and node_id):
+                        continue
+                    try:
+                        node_label = NodeLabel(node_label_name)
+                    except KeyError:
+                        print(f"Unknown node label: {node_label_name}")
+                        continue
+                    try:
+                        self.repo.link_request_provided(
+                            request_id=request_id,
+                            provided_label=node_label,
+                            provided_id_value=node_id,
+                        )
+                    except Exception as e:
+                        print(f"Failed to link request {request_id} to {node_label.value}: {e}")
+                        continue
+                continue
+            for rel in rel_list:
+                if not isinstance(rel, dict):
+                    continue
+                try:
+                    if rel_enum is RelType.DIRECTOR_OF:
+                        person = rel.get("person_rnokpp")
+                        org = rel.get("org_edrpou")
+                        if person and org:
+                            props = {}
+                            if rel.get("role_text"):
+                                props["role_text"] = rel.get("role_text")
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=person,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.ORGANIZATION,
+                                to_id_value=org,
+                                rel_props=props or None,
+                            )
+                    elif rel_enum is RelType.FOUNDER_OF:
+                        person = rel.get("person_rnokpp")
+                        org = rel.get("org_edrpou")
+                        if person and org:
+                            props = {}
+                            if rel.get("capital") is not None:
+                                props["capital"] = rel.get("capital")
+                            if rel.get("role_text"):
+                                props["role_text"] = rel.get("role_text")
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=person,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.ORGANIZATION,
+                                to_id_value=org,
+                                rel_props=props or None,
+                            )
+                    elif rel_enum is RelType.CHILD_OF:
+                        child = rel.get("child_rnokpp")
+                        parent = rel.get("parent_rnokpp")
+                        if child and parent:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=child,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PERSON,
+                                to_id_value=parent,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.SPOUSE_OF:
+                        p1 = rel.get("person1_rnokpp")
+                        p2 = rel.get("person2_rnokpp")
+                        if p1 and p2:
+                            props = {}
+                            if rel.get("marriage_date"):
+                                props["marriage_date"] = rel.get("marriage_date")
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=p1,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PERSON,
+                                to_id_value=p2,
+                                rel_props=props or None,
+                            )
+                    elif rel_enum is RelType.EARNED_INCOME:
+                        person = rel.get("person_rnokpp")
+                        income = rel.get("income_id")
+                        if person and income:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=person,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.INCOME_RECORD,
+                                to_id_value=income,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.PAID_BY:
+                        income = rel.get("income_id")
+                        org = rel.get("org_edrpou")
+                        if income and org:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.INCOME_RECORD,
+                                from_id_value=income,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.ORGANIZATION,
+                                to_id_value=org,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.OWNS:
+                        person = rel.get("person_rnokpp")
+                        prop_id = rel.get("property_id")
+                        if person and prop_id:
+                            props = {}
+                            if rel.get("ownership_type"):
+                                props["ownership_type"] = rel.get("ownership_type")
+                            if rel.get("since_date"):
+                                props["since_date"] = rel.get("since_date")
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.PERSON,
+                                from_id_value=person,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PROPERTY,
+                                to_id_value=prop_id,
+                                rel_props=props or None,
+                            )
+                    elif rel_enum is RelType.HAS_GRANTOR:
+                        poa = rel.get("poa_id")
+                        grantor = rel.get("grantor_rnokpp")
+                        if poa and grantor:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.POWER_OF_ATTORNEY,
+                                from_id_value=poa,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PERSON,
+                                to_id_value=grantor,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.HAS_REPRESENTATIVE:
+                        poa = rel.get("poa_id")
+                        rep = rel.get("representative_rnokpp")
+                        if poa and rep:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.POWER_OF_ATTORNEY,
+                                from_id_value=poa,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PERSON,
+                                to_id_value=rep,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.HAS_PROPERTY:
+                        poa = rel.get("poa_id")
+                        prop_id = rel.get("property_id")
+                        if poa and prop_id:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.POWER_OF_ATTORNEY,
+                                from_id_value=poa,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PROPERTY,
+                                to_id_value=prop_id,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.HAS_NOTARIAL_BLANK:
+                        poa = rel.get("poa_id")
+                        blank = rel.get("blank_id")
+                        if poa and blank:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.POWER_OF_ATTORNEY,
+                                from_id_value=poa,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.NOTARIAL_BLANK,
+                                to_id_value=blank,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.CREATED_BY:
+                        request = rel.get("request_id")
+                        executor = rel.get("executor_rnokpp")
+                        if request and executor:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.REQUEST,
+                                from_id_value=request,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.EXECUTOR,
+                                to_id_value=executor,
+                                rel_props=None,
+                            )
+                    elif rel_enum is RelType.ABOUT:
+                        request = rel.get("request_id")
+                        subject = rel.get("subject_rnokpp")
+                        if request and subject:
+                            self.repo.merge_relationship(
+                                from_label=NodeLabel.REQUEST,
+                                from_id_value=request,
+                                rel_type=rel_enum,
+                                to_label=NodeLabel.PERSON,
+                                to_id_value=subject,
+                                rel_props=None,
+                            )
+                except Exception as e:
+                    print(f"Failed to create {rel_enum.value} relationship: {e}")
+                    continue
 
-    def _persist_relationships(self, result: NormalizationResult) -> None:
-        for rel in result.director_relations:
-            try:
-                self.mutation_repo.link_person_director_of_organization(
-                    person_rnokpp=rel.person_rnokpp,
-                    org_edrpou=rel.organization_edrpou,
-                    role_text=rel.role_text,
-                )
-            except Exception:
-                pass
+    def run(self):
+        try:
+            self.repo.ensure_constraints()
+        except Exception as e:
+            print(f"Failed to ensure constraints (may already exist): {e}")
 
-        for rel in result.founder_relations:
-            try:
-                self.mutation_repo.link_person_founder_of_organization(
-                    person_rnokpp=rel.person_rnokpp,
-                    org_edrpou=rel.organization_edrpou,
-                    capital=rel.capital,
-                    role_text=rel.role_text,
-                )
-            except Exception:
-                pass
-
-        for rel in result.child_relations:
-            try:
-                self.mutation_repo.link_person_child_of_person(
-                    child_rnokpp=rel.child_rnokpp,
-                    parent_rnokpp=rel.parent_rnokpp,
-                )
-            except Exception:
-                pass
-
-        for rel in result.spouse_relations:
-            try:
-                self.mutation_repo.link_person_spouse_of_person(
-                    person1_rnokpp=rel.person_rnokpp,
-                    person2_rnokpp=rel.spouse_rnokpp,
-                    marriage_date=rel.marriage_date,
-                )
-            except Exception:
-                pass
-
-        for rel in result.ownership_relations:
-            try:
-                self.mutation_repo.link_person_owns_property(
-                    person_rnokpp=rel.person_rnokpp,
-                    property_id=rel.property_id,
-                    ownership_type=rel.ownership_type,
-                    since_date=rel.since_date,
-                )
-            except Exception:
-                pass
-
-        for person_rnokpp, income_id in result.person_income_relations:
-            try:
-                self.mutation_repo.link_person_earned_income(
-                    person_rnokpp=person_rnokpp,
-                    income_id=income_id,
-                )
-            except Exception:
-                pass
-
-        for income_id, org_edrpou in result.income_paid_by_relations:
-            try:
-                self.mutation_repo.link_income_paid_by_organization(
-                    income_id=income_id,
-                    org_edrpou=org_edrpou,
-                )
-            except Exception:
-                pass
-
-        for person_rnokpp, poa_id in result.grantor_relations:
-            try:
-                self.mutation_repo.link_person_grantor_of_poa(
-                    person_rnokpp=person_rnokpp,
-                    poa_id=poa_id,
-                )
-            except Exception:
-                pass
-
-        for person_rnokpp, poa_id in result.representative_relations:
-            try:
-                self.mutation_repo.link_person_representative_of_poa(
-                    person_rnokpp=person_rnokpp,
-                    poa_id=poa_id,
-                )
-            except Exception:
-                pass
-
-        for poa_id, property_id in result.poa_property_relations:
-            try:
-                self.mutation_repo.link_poa_authorizes_property(
-                    poa_id=poa_id,
-                    property_id=property_id,
-                )
-            except Exception:
-                pass
-
-        for executor_rnokpp, request_id in result.executor_request_relations:
-            try:
-                self.mutation_repo.link_executor_created_request(
-                    executor_rnokpp=executor_rnokpp,
-                    request_id=request_id,
-                )
-            except Exception:
-                pass
-
-        for request_id, person_rnokpp in result.request_subject_relations:
-            try:
-                self.mutation_repo.link_request_subject_of_person(
-                    request_id=request_id,
-                    person_rnokpp=person_rnokpp,
-                )
-            except Exception:
-                pass
+        for file_path in self._iter_files():
+            print(f"[INFO] Processing normalized file: {file_path}")
+            record = self._load_json(file_path)
+            if not record:
+                print(f"[WARN] Skipping {file_path}: no valid JSON object")
+                continue
+            self._persist_entities(record)
+            self._persist_relationships(record)

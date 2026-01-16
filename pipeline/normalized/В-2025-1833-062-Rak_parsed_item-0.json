@@ -1,0 +1,174 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-1234567890",
+      "basis_request": null,
+      "application_number": null,
+      "application_date": null,
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2012|1|101",
+      "income_accrued": 9000.0,
+      "income_paid": 7650.0,
+      "tax_charged": 1350.0,
+      "tax_transferred": 1350.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2012,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234567890"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2012|2|101",
+      "income_accrued": 9000.0,
+      "income_paid": 7650.0,
+      "tax_charged": 1350.0,
+      "tax_transferred": 1350.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2012,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234567890"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2012|3|101",
+      "income_accrued": 9300.0,
+      "income_paid": 7905.0,
+      "tax_charged": 1395.0,
+      "tax_transferred": 1395.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2012,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234567890"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2012|4|101",
+      "income_accrued": 9300.0,
+      "income_paid": 7905.0,
+      "tax_charged": 1395.0,
+      "tax_transferred": 1395.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2012,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-1234567890"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2012|1|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2012|1|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2012|2|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2012|3|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2012|4|101",
+        "org_edrpou": "20028399"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "З-1234567890",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2012|1|101"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2012|2|101"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2012|3|101"
+      },
+      {
+        "request_id": "З-1234567890",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2012|4|101"
+      }
+    ]
+  }
+}

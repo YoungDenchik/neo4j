@@ -1,0 +1,226 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "11111113",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-####-####-###-###",
+      "basis_request": null,
+      "application_number": "c5f21a6c-95fc-4c34-a479-ea20aea8b052",
+      "application_date": "2023-06-13T12:50:32",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|1|150",
+      "income_accrued": 1774.97,
+      "income_paid": 1774.97,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|2|127",
+      "income_accrued": 1340.19,
+      "income_paid": 1340.19,
+      "tax_charged": 173.08,
+      "tax_transferred": 173.08,
+      "income_type_code": "127",
+      "income_type_description": "Іншi доходи",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|2|150",
+      "income_accrued": 1403.68,
+      "income_paid": 1403.68,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|3|127",
+      "income_accrued": 192.92,
+      "income_paid": 192.92,
+      "tax_charged": 28.94,
+      "tax_transferred": 28.94,
+      "income_type_code": "127",
+      "income_type_description": "Іншi доходи",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "OTHER",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|3|150",
+      "income_accrued": 1060,
+      "income_paid": 1060,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "11111113",
+      "income_id": "1111111111|11111113|2011|4|150",
+      "income_accrued": 0,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2011,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-####-####-###-###"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|11111113|2011|1|150"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|11111113|2011|1|150",
+        "org_edrpou": "11111113"
+      },
+      {
+        "income_id": "1111111111|11111113|2011|2|127",
+        "org_edrpou": "11111113"
+      },
+      {
+        "income_id": "1111111111|11111113|2011|2|150",
+        "org_edrpou": "11111113"
+      },
+      {
+        "income_id": "1111111111|11111113|2011|3|127",
+        "org_edrpou": "11111113"
+      },
+      {
+        "income_id": "1111111111|11111113|2011|3|150",
+        "org_edrpou": "11111113"
+      },
+      {
+        "income_id": "1111111111|11111113|2011|4|150",
+        "org_edrpou": "11111113"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|1|150"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|2|127"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|2|150"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|3|127"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|3|150"
+      },
+      {
+        "request_id": "З-####-####-###-###",
+        "node_label": "IncomeRecord",
+        "node_id": "1111111111|11111113|2011|4|150"
+      }
+    ]
+  }
+}

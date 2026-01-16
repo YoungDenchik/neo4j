@@ -1,0 +1,196 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "Вінницька",
+      "first_name": "обласна",
+      "middle_name": "державна",
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": "Вінницька обласна державна адміністрація",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [
+    {
+      "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+      "basis_request": null,
+      "application_number": "2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+      "application_date": "2023-06-13T12:56:00",
+      "period_begin_month": null,
+      "period_begin_year": null,
+      "period_end_month": null,
+      "period_end_year": null,
+      "subject_rnokpp": null,
+      "executor_rnokpp": null
+    }
+  ],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2006|1|101",
+      "income_accrued": 3450.0,
+      "income_paid": 3001.5,
+      "tax_charged": 448.5,
+      "tax_transferred": 448.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2006,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2006|2|101",
+      "income_accrued": 3450.0,
+      "income_paid": 3001.5,
+      "tax_charged": 448.5,
+      "tax_transferred": 448.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2006,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2006|3|101",
+      "income_accrued": 3600.0,
+      "income_paid": 3132.0,
+      "tax_charged": 468.0,
+      "tax_transferred": 468.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2006,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012"
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2006|4|101",
+      "income_accrued": 3800.0,
+      "income_paid": 3306.0,
+      "tax_charged": 494.0,
+      "tax_transferred": 494.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2006,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2006|1|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2006|2|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2006|3|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2006|4|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2006|1|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2006|2|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2006|3|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2006|4|101",
+        "org_edrpou": "20028399"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "subject_rnokpp": "2935512345"
+      }
+    ],
+    "provided": [
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "node_label": "Request",
+        "node_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012"
+      },
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2006|1|101"
+      },
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2006|2|101"
+      },
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2006|3|101"
+      },
+      {
+        "request_id": "З-2b3c4d5e-6f7a-8901-b2c3-d4e5f6789012",
+        "node_label": "IncomeRecord",
+        "node_id": "2935512345|20028399|2006|4|101"
+      }
+    ]
+  }
+}

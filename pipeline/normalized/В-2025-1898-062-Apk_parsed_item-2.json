@@ -1,0 +1,69 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111118",
+      "name": "ТОВ 'АВСТРІЯФАРМ'",
+      "short_name": "ТОВ 'АВСТРІЯФАРМ'",
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "81111118",
+      "org_edrpou": "81111118",
+      "income_id": "81111118|81111118|2021|9|157",
+      "income_accrued": 497030,
+      "income_paid": 497030,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "157",
+      "income_type_description": "Дохiд, виплачений самозайнятiй особi",
+      "period_quarter_month": "Вересень",
+      "period_year": 2021,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "BUSINESS"
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [
+      {
+        "income_id": "81111118|81111118|2021|9|157",
+        "org_edrpou": "81111118"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": [
+      {
+        "request_id": null,
+        "node_label": "IncomeRecord",
+        "node_id": "81111118|81111118|2021|9|157"
+      }
+    ]
+  }
+}

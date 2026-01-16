@@ -1,0 +1,189 @@
+{
+  "persons": [
+    {
+      "rnokpp": "1111111111",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "10293847",
+      "name": "КП 'МІСЬК-СЕРВІС'",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    },
+    {
+      "edrpou": "00112233",
+      "name": "УПСЗН РАЙОННОЇ АДМІНІСТРАЦІЇ",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "10293847",
+      "income_id": "1111111111|10293847|2001|1|101",
+      "income_accrued": 750,
+      "income_paid": 652.5,
+      "tax_charged": 97.5,
+      "tax_transferred": 97.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2001,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "10293847",
+      "income_id": "1111111111|10293847|2001|2|101",
+      "income_accrued": 750,
+      "income_paid": 652.5,
+      "tax_charged": 97.5,
+      "tax_transferred": 97.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "2 квартал",
+      "period_year": 2001,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "10293847",
+      "income_id": "1111111111|10293847|2001|3|101",
+      "income_accrued": 780,
+      "income_paid": 678.6,
+      "tax_charged": 101.4,
+      "tax_transferred": 101.4,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "3 квартал",
+      "period_year": 2001,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "10293847",
+      "income_id": "1111111111|10293847|2001|4|101",
+      "income_accrued": 800,
+      "income_paid": 696,
+      "tax_charged": 104,
+      "tax_transferred": 104,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата",
+      "period_quarter_month": "4 квартал",
+      "period_year": 2001,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "1111111111",
+      "org_edrpou": "00112233",
+      "income_id": "1111111111|00112233|2001|1|128",
+      "income_accrued": 150,
+      "income_paid": 150,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "128",
+      "income_type_description": "Державна та соцiальна матерiальна допомога",
+      "period_quarter_month": "1 квартал",
+      "period_year": 2001,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SOCIAL",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|10293847|2001|1|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|10293847|2001|2|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|10293847|2001|3|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|10293847|2001|4|101"
+      },
+      {
+        "person_rnokpp": "1111111111",
+        "income_id": "1111111111|00112233|2001|1|128"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "1111111111|10293847|2001|1|101",
+        "org_edrpou": "10293847"
+      },
+      {
+        "income_id": "1111111111|10293847|2001|2|101",
+        "org_edrpou": "10293847"
+      },
+      {
+        "income_id": "1111111111|10293847|2001|3|101",
+        "org_edrpou": "10293847"
+      },
+      {
+        "income_id": "1111111111|10293847|2001|4|101",
+        "org_edrpou": "10293847"
+      },
+      {
+        "income_id": "1111111111|00112233|2001|1|128",
+        "org_edrpou": "00112233"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

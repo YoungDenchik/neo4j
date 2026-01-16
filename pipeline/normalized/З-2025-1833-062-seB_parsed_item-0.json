@@ -1,0 +1,51 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "АДЕЛЬРЕЇВ",
+      "first_name": "ЕДМУНД",
+      "middle_name": "АДОЛЬФОВИЧ",
+      "date_birth": "1980-05-15"
+    }
+  ],
+  "organizations": [
+    {
+      "edrpou": "11111111",
+      "name": "Тестеров Таурус"
+    }
+  ],
+  "executors": [
+    {
+      "executor_rnokpp": "111115555511",
+      "full_name": "Тестеров Таурус"
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "З-2025-1833-062-seB",
+      "basis_request": "6161-ТІТ",
+      "application_number": "6161-ТІТ",
+      "application_date": "2025-06-25",
+      "period_begin_month": 1,
+      "period_begin_year": 2008,
+      "period_end_month": 12,
+      "period_end_year": 2008,
+      "subject_rnokpp": "2935512345"
+    }
+  ],
+  "relationships": {
+    "created_by": [
+      {
+        "request_id": "З-2025-1833-062-seB",
+        "executor_rnokpp": "111115555511"
+      }
+    ],
+    "about": [
+      {
+        "request_id": "З-2025-1833-062-seB",
+        "node_label": "Person",
+        "node_id": "2935512345"
+      }
+    ]
+  }
+}

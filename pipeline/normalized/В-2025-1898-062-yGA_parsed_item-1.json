@@ -1,0 +1,290 @@
+{
+  "persons": [],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "81111110",
+      "name": "ТОВ 'ФІРМА - ОБЕРІГ'",
+      "relationships": {
+        "paid_by": [
+          {
+            "income_id": "81111110|2024|1|101|1421.54",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|2|101|1329.83",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|3|101|1421.54",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|4|101|1375.69",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|5|101|1421.54",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|6|101|1375.69",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|7|101|1447.14",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|8|101|1425.27",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|9|101|1379.29",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|10|101|1425.27",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|11|101|1379.29",
+            "org_edrpou": "81111110"
+          },
+          {
+            "income_id": "81111110|2024|12|101|1425.26",
+            "org_edrpou": "81111110"
+          }
+        ]
+      }
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|1|101|1421.54",
+      "income_accrued": 1421.54,
+      "income_paid": 0,
+      "tax_charged": 255.88,
+      "tax_transferred": 255.88,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Січень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|2|101|1329.83",
+      "income_accrued": 1329.83,
+      "income_paid": 0,
+      "tax_charged": 239.37,
+      "tax_transferred": 239.37,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Лютий",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|3|101|1421.54",
+      "income_accrued": 1421.54,
+      "income_paid": 0,
+      "tax_charged": 255.88,
+      "tax_transferred": 255.88,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Березень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|4|101|1375.69",
+      "income_accrued": 1375.69,
+      "income_paid": 0,
+      "tax_charged": 247.62,
+      "tax_transferred": 247.62,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Квітень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|5|101|1421.54",
+      "income_accrued": 1421.54,
+      "income_paid": 0,
+      "tax_charged": 255.88,
+      "tax_transferred": 255.88,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Травень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|6|101|1375.69",
+      "income_accrued": 1375.69,
+      "income_paid": 0,
+      "tax_charged": 247.62,
+      "tax_transferred": 247.62,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Червень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|7|101|1447.14",
+      "income_accrued": 1447.14,
+      "income_paid": 0,
+      "tax_charged": 260.49,
+      "tax_transferred": 260.49,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Липень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|8|101|1425.27",
+      "income_accrued": 1425.27,
+      "income_paid": 0,
+      "tax_charged": 256.55,
+      "tax_transferred": 256.55,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Серпень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|9|101|1379.29",
+      "income_accrued": 1379.29,
+      "income_paid": 16827.34,
+      "tax_charged": 1009.64,
+      "tax_transferred": 1009.64,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Вересень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|10|101|1425.27",
+      "income_accrued": 1425.27,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Жовтень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|11|101|1379.29",
+      "income_accrued": 1379.29,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Листопад",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "81111110",
+      "org_edrpou": "81111110",
+      "income_id": "81111110|2024|12|101|1425.26",
+      "income_accrued": 1425.26,
+      "income_paid": 0,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "101",
+      "income_type_description": "ЗАРОБІТНА ПЛАТА",
+      "period_quarter_month": "Грудень",
+      "period_year": 2024,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

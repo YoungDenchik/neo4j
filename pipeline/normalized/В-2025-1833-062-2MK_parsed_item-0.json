@@ -1,0 +1,152 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": "",
+      "first_name": "",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "02070693",
+      "name": "",
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "02070693",
+      "income_id": "2935512345|02070693|1998|1 квартал|150 - Сума стипендiї",
+      "income_accrued": 120,
+      "income_paid": 120,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "1 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SCHOLARSHIP",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "02070693",
+      "income_id": "2935512345|02070693|1998|2 квартал|150 - Сума стипендiї",
+      "income_accrued": 120,
+      "income_paid": 120,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "2 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SCHOLARSHIP",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "02070693",
+      "income_id": "2935512345|02070693|1998|3 квартал|150 - Сума стипендiї",
+      "income_accrued": 135.5,
+      "income_paid": 135.5,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "3 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SCHOLARSHIP",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "02070693",
+      "income_id": "2935512345|02070693|1998|4 квартал|150 - Сума стипендiї",
+      "income_accrued": 135.5,
+      "income_paid": 135.5,
+      "tax_charged": 0,
+      "tax_transferred": 0,
+      "income_type_code": "150",
+      "income_type_description": "Сума стипендiї",
+      "period_quarter_month": "4 квартал",
+      "period_year": 1998,
+      "result_income": 1,
+      "currency": "UAH",
+      "income_category": "SCHOLARSHIP",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|02070693|1998|1 квартал|150 - Сума стипендiї"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|02070693|1998|2 квартал|150 - Сума стипендiї"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|02070693|1998|3 квартал|150 - Сума стипендiї"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|02070693|1998|4 квартал|150 - Сума стипендiї"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|02070693|1998|1 квартал|150 - Сума стипендiї",
+        "org_edrpou": "02070693"
+      },
+      {
+        "income_id": "2935512345|02070693|1998|2 квартал|150 - Сума стипендiї",
+        "org_edrpou": "02070693"
+      },
+      {
+        "income_id": "2935512345|02070693|1998|3 квартал|150 - Сума стипендiї",
+        "org_edrpou": "02070693"
+      },
+      {
+        "income_id": "2935512345|02070693|1998|4 квартал|150 - Сума стипендiї",
+        "org_edrpou": "02070693"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

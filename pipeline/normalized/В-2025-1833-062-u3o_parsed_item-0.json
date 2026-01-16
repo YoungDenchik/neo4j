@@ -1,0 +1,152 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2935512345",
+      "last_name": " ",
+      "first_name": " ",
+      "middle_name": null,
+      "date_birth": null
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [
+    {
+      "edrpou": "20028399",
+      "name": null,
+      "short_name": null,
+      "state": null,
+      "state_text": null,
+      "olf_code": null,
+      "olf_name": null,
+      "authorised_capital": null,
+      "registration_date": null,
+      "termination_date": null
+    }
+  ],
+  "executors": [],
+  "requests": [],
+  "income_records": [
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2019|1|101",
+      "income_accrued": 42000.0,
+      "income_paid": 33810.0,
+      "tax_charged": 8190.0,
+      "tax_transferred": 8190.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "1",
+      "period_year": 2019,
+      "result_income": 1.0,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2019|2|101",
+      "income_accrued": 42000.0,
+      "income_paid": 33810.0,
+      "tax_charged": 8190.0,
+      "tax_transferred": 8190.0,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "2",
+      "period_year": 2019,
+      "result_income": 1.0,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2019|3|101",
+      "income_accrued": 43500.0,
+      "income_paid": 35017.5,
+      "tax_charged": 8482.5,
+      "tax_transferred": 8482.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "3",
+      "period_year": 2019,
+      "result_income": 1.0,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    },
+    {
+      "person_rnokpp": "2935512345",
+      "org_edrpou": "20028399",
+      "income_id": "2935512345|20028399|2019|4|101",
+      "income_accrued": 43500.0,
+      "income_paid": 35017.5,
+      "tax_charged": 8482.5,
+      "tax_transferred": 8482.5,
+      "income_type_code": "101",
+      "income_type_description": "Заробiтна плата за основним мiсцем роботи",
+      "period_quarter_month": "4",
+      "period_year": 2019,
+      "result_income": 1.0,
+      "currency": "UAH",
+      "income_category": "SALARY",
+      "source_request_id": null
+    }
+  ],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2019|1|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2019|2|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2019|3|101"
+      },
+      {
+        "person_rnokpp": "2935512345",
+        "income_id": "2935512345|20028399|2019|4|101"
+      }
+    ],
+    "paid_by": [
+      {
+        "income_id": "2935512345|20028399|2019|1|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2019|2|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2019|3|101",
+        "org_edrpou": "20028399"
+      },
+      {
+        "income_id": "2935512345|20028399|2019|4|101",
+        "org_edrpou": "20028399"
+      }
+    ],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}

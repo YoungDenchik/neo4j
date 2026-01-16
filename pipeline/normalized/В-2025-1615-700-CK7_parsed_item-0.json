@@ -1,0 +1,46 @@
+{
+  "persons": [
+    {
+      "rnokpp": "2019301234",
+      "last_name": "СВІФТ",
+      "first_name": "МАГДАЛЕНА",
+      "middle_name": "СИГІЗМУНДОВНА",
+      "date_birth": "1955-04-24"
+    }
+  ],
+  "person_aliases": [],
+  "organizations": [],
+  "executors": [],
+  "requests": [],
+  "income_records": [],
+  "properties": [],
+  "power_of_attorney": [],
+  "notarial_blanks": [],
+  "documents": [
+    {
+      "doc_id": "P|AA|123456|ЛЕНІНСЬКИМ РВ УМВС УКРАЇНИ У ВІННИЦЬКІЙ ОБЛАСТІ|1996-03-15",
+      "doc_type": "P",
+      "series": "AA",
+      "number": "123456",
+      "issued_by": "ЛЕНІНСЬКИМ РВ УМВС УКРАЇНИ У ВІННИЦЬКІЙ ОБЛАСТІ",
+      "issued_date": "1996-03-15",
+      "expiry_date": null
+    }
+  ],
+  "relationships": {
+    "director_of": [],
+    "founder_of": [],
+    "child_of": [],
+    "spouse_of": [],
+    "earned_income": [],
+    "paid_by": [],
+    "owns": [],
+    "has_grantor": [],
+    "has_representative": [],
+    "has_property": [],
+    "has_notarial_blank": [],
+    "created_by": [],
+    "about": [],
+    "provided": []
+  }
+}
