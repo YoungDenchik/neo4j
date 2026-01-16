@@ -39,3 +39,7 @@ Thumbs.db
 
 # =========================
 all_data.txt
+pipeline/parsed
+pipeline/test_normalization.py
+pipeline/output
+pipeline/test_ingest.py
