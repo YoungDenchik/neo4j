@@ -15,38 +15,100 @@ class NodeLabel(str, Enum):
     REQUEST = "Request"
     EXECUTOR = "Executor"
     POWER_OF_ATTORNEY = "PowerOfAttorney"
+    ADDRESS = "Address"
+    DOCUMENT = "Document"
+    COURT_CASE = "CourtCase"
+    LAND_PARCEL = "LandParcel"
+    BIRTH_RECORD = "BirthRecord"
+    KVED_ACTIVITY = "KvedActivity"
+    NOTARIAL_BLANK = "NotarialBlank"
+    PERSON_ALIAS = "PersonAlias"  # дуже бажано, якщо в court rnokpp=null
+
 
 
 class RelType(str, Enum):
     """
-    Exhaustive list of all relationship types.
-    WHY: Enforces schema governance - explicit, finite set of relationship types.
-    Each relationship represents exactly one fact or action.
+    Exhaustive list of relationship types in the graph.
+
+    WHY:
+    - Enforces a controlled, finite vocabulary of relationships (schema governance)
+    - Prevents accidental/dynamic relationship creation
+    - Makes traversals predictable for analytics, risk scoring, and investigation views
+
+    Convention:
+    - Relationship direction is meaningful (left -> right)
+    - Each relationship represents exactly one fact / semantic meaning
     """
-    # Person → Organization
-    DIRECTOR_OF = "DIRECTOR_OF"        # Person is director/head of organization
-    FOUNDER_OF = "FOUNDER_OF"          # Person is founder/shareholder
 
-    # Person → Person (family relationships)
-    CHILD_OF = "CHILD_OF"              # Person is child of another person
-    SPOUSE_OF = "SPOUSE_OF"            # Person is married to another person
+    # ============================================================
+    # Corporate relationships (business / corporate governance)
+    # ============================================================
 
-    # IncomeRecord relationships (fact-based, not direct person-org)
-    # WHY split: Allows efficient queries in both directions + clear money flow semantics
-    EARNED_INCOME = "EARNED_INCOME"    # Person → IncomeRecord
-    PAID_BY = "PAID_BY"                # IncomeRecord → Organization
+    DIRECTOR_OF = "DIRECTOR_OF"   # Person -> Organization
+                                 # The person acts as director / head / executive of the organization
 
-    # Property relationships
-    OWNS = "OWNS"                      # Person → Property
+    FOUNDER_OF = "FOUNDER_OF"     # Person -> Organization
+                                 # The person is a founder / shareholder / beneficial owner of the organization
 
-    # Power of Attorney relationships
-    GRANTOR_OF = "GRANTOR_OF"          # Person granted PoA
-    REPRESENTATIVE_OF = "REPRESENTATIVE_OF"  # Person received PoA
-    AUTHORIZES_PROPERTY = "AUTHORIZES_PROPERTY"  # PoA → Property
+    HAS_KVED = "HAS_KVED"         # Organization -> KvedActivity
+                                 # The organization is registered with a specific economic activity code (KVED)
 
-    # Investigation relationships
-    CREATED_REQUEST = "CREATED_REQUEST"  # Executor → Request
-    SUBJECT_OF = "SUBJECT_OF"          # Request → Person (investigation target)
+    # ============================================================
+    # Family relationships (civil registry / kinship network)
+    # ============================================================
+
+    CHILD_OF = "CHILD_OF"         # Person(child) -> Person(parent)
+                                 # The person is a child of another person (parent relationship)
+
+    SPOUSE_OF = "SPOUSE_OF"       # Person -> Person
+                                 # Marriage / spouse relationship
+                                 # (can be treated as symmetric during queries if needed)
+
+    # ============================================================
+    # Income relationships (fact-based financial events)
+    # ============================================================
+
+    EARNED_INCOME = "EARNED_INCOME"  # Person -> IncomeRecord
+                                    # The person received/earned this specific income record
+
+    PAID_BY = "PAID_BY"              # IncomeRecord -> Organization
+                                    # The income record was paid by this organization (tax agent / employer)
+
+    # ============================================================
+    # Property / assets relationships
+    # ============================================================
+
+    OWNS = "OWNS"                 # Person -> Property (or LandParcel if modeled as Property)
+                                 # The person is the legal owner of the asset
+
+    # ============================================================
+    # Power of Attorney (PoA) relationships (document-centric model)
+    # ============================================================
+
+    HAS_GRANTOR = "HAS_GRANTOR"   # PowerOfAttorney -> Person|Organization
+                                 # The PoA was issued by the grantor (the entity delegating authority)
+
+    HAS_REPRESENTATIVE = "HAS_REPRESENTATIVE"  # PowerOfAttorney -> Person|Organization
+                                              # The PoA assigns authority to this representative (proxy/agent)
+
+    HAS_PROPERTY = "HAS_PROPERTY" # PowerOfAttorney -> Property
+                                 # The PoA is related to a specific asset (vehicle/real estate/etc.)
+
+    HAS_NOTARIAL_BLANK = "HAS_NOTARIAL_BLANK"  # PowerOfAttorney -> NotarialBlank
+                                              # The PoA was registered using a specific notarial blank (serial/number)
+
+    # ============================================================
+    # Investigation provenance (data lineage / audit trail)
+    # ============================================================
+
+    CREATED_BY = "CREATED_BY"     # Request -> Executor
+                                 # The request was created by this executor/investigator
+
+    ABOUT = "ABOUT"               # Request -> Person
+                                 # The request targets or concerns this person (subject of investigation)
+
+    PROVIDED = "PROVIDED"         # Request -> Any node (IncomeRecord/CourtCase/PoA/Property/...)
+                                 # The request produced/returned this data entity (provenance link)
 
 
 class PropertyType(str, Enum):
@@ -54,29 +116,52 @@ class PropertyType(str, Enum):
     Types of property that can be owned.
     WHY: Controlled vocabulary for consistent categorization.
     """
-    REAL_ESTATE = "REAL_ESTATE"        # Houses, apartments, land
+    REAL_ESTATE = "REAL_ESTATE"        # Houses, apartments
     VEHICLE = "VEHICLE"                # Cars, motorcycles, etc.
     OTHER = "OTHER"
+    LAND = "LAND"
 
 
-class IncomeType(str, Enum):
+# class IncomeType(str, Enum):
+#     """
+#     Common income type codes from Ukrainian tax system.
+#     WHY: These are standard government codes - mapping them enables
+#     consistent categorization across the entire dataset.
+
+#     Note: This is not exhaustive - source data has 100+ codes.
+#     We map the most common ones and use "OTHER" as fallback.
+#     """
+#     SALARY_PRIMARY = "101"             # Заробітна плата за основним місцем роботи
+#     SCHOLARSHIP = "150"                # Сума стипендії
+#     SOCIAL_PAYMENT = "128"             # Соціальні виплати з відповідних бюджетів
+#     LAND_RENT = "195"                  # Надання зем. ділянки, паю в оренду
+#     CIVIL_CONTRACT = "102"             # Виплати за цивільно-правовим договором
+#     SELF_EMPLOYED = "157"              # Дохід самозайнятої особи
+#     BONUS = "126"                      # Додаткове благо
+#     TAX_DECLARATION = "512"            # Податкова декларація (єдиний податок)
+#     OTHER = "999"                      # Unknown/other income type
+
+
+class IncomeCategory(str, Enum):
     """
-    Common income type codes from Ukrainian tax system.
-    WHY: These are standard government codes - mapping them enables
-    consistent categorization across the entire dataset.
+    High-level semantic categories for income records.
 
-    Note: This is not exhaustive - source data has 100+ codes.
-    We map the most common ones and use "OTHER" as fallback.
+    WHY:
+    - Source income_type_code contains many (100+) codes
+    - We keep raw code, but map it into a stable category for analytics / risk scoring
     """
-    SALARY_PRIMARY = "101"             # Заробітна плата за основним місцем роботи
-    SCHOLARSHIP = "150"                # Сума стипендії
-    SOCIAL_PAYMENT = "128"             # Соціальні виплати з відповідних бюджетів
-    LAND_RENT = "195"                  # Надання зем. ділянки, паю в оренду
-    CIVIL_CONTRACT = "102"             # Виплати за цивільно-правовим договором
-    SELF_EMPLOYED = "157"              # Дохід самозайнятої особи
-    BONUS = "126"                      # Додаткове благо
-    TAX_DECLARATION = "512"            # Податкова декларація (єдиний податок)
-    OTHER = "999"                      # Unknown/other income type
+    SALARY = "SALARY"                # official employment salary
+    CONTRACT = "CONTRACT"            # civil contracts / services
+    BUSINESS = "BUSINESS"            # self-employed / entrepreneur income
+    RENT = "RENT"                    # rent/lease payments (land/property)
+    SOCIAL = "SOCIAL"                # social benefits / state payments
+    SCHOLARSHIP = "SCHOLARSHIP"      # scholarships
+    DIVIDENDS = "DIVIDENDS"          # dividends / corporate profit distribution
+    INTEREST = "INTEREST"            # bank interest / deposits
+    CAPITAL_GAIN = "CAPITAL_GAIN"    # sale of property / investment gains
+    GIFT_INHERITANCE = "GIFT_INHERITANCE"  # gifts / inheritance
+    BONUS_BENEFIT = "BONUS_BENEFIT"  # bonuses / additional benefits (додаткове благо)
+    OTHER = "OTHER"                  # fallback
 
 
 class OrganizationState(str, Enum):

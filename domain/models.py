@@ -2,15 +2,16 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Optional, List, Dict, Any
-from datetime import date, datetime
 
-from domain.enums import PropertyType, OrganizationState
+from domain.enums import PropertyType, IncomeCategory
 
 
 # ============================================================================
-# DOMAIN ENTITIES (Nodes in the graph)
-# WHY: Immutable dataclasses represent real-world entities with stable identities.
-# These map 1:1 to Neo4j nodes.
+# DOMAIN ENTITIES (Neo4j Nodes)
+# WHY:
+# - These classes map 1:1 to Neo4j nodes (domain layer)
+# - Nodes represent stable identities (rnokpp, edrpou, request_id, etc.)
+# - They are immutable (frozen=True) to avoid accidental mutation during ingestion
 # ============================================================================
 
 
@@ -18,81 +19,111 @@ from domain.enums import PropertyType, OrganizationState
 class Person:
     """
     Natural person (taxpayer, director, family member).
-    Identity: RNOKPP (Ukrainian tax identification number).
-    WHY immutable: Person attributes don't change frequently; if they do, we MERGE.
+    Identity: RNOKPP (Ukrainian taxpayer id).
     """
-    rnokpp: str  # Unique tax ID
+    rnokpp: str
     last_name: str
     first_name: str
     middle_name: Optional[str] = None
     date_birth: Optional[str] = None  # ISO "YYYY-MM-DD"
+    unzr: Optional[str] = None        # demographic registry id (if present)
+
+
+@dataclass(frozen=True)
+class PersonAlias:
+    """
+    Weak person identity used when RNOKPP is missing in the source data.
+
+    WHY:
+    - In court/civil registry records a person may appear only as a text name (PIB)
+    - We cannot reliably merge such record into a Person node without a stable id
+    - PersonAlias acts as a safe intermediate node that can later be linked to Person
+    """
+    alias_id: str                # synthetic hash (e.g., normalized full name + extra signals)
+    full_name_raw: str           # raw "PIB" from source
+    normalized_name: Optional[str] = None
+    date_birth: Optional[str] = None
 
 
 @dataclass(frozen=True)
 class Organization:
     """
     Legal entity (company, government agency, tax agent).
-    Identity: EDRPOU (Ukrainian company registration code).
-    WHY separate from Person: Different legal status, lifecycle, and compliance rules.
+    Identity: EDRPOU (company registration code).
     """
-    edrpou: str  # Unique company code
+    edrpou: str
     name: str
+
     short_name: Optional[str] = None
-    state: Optional[str] = None  # e.g., "1" = registered, "3" = terminated
-    state_text: Optional[str] = None  # Human-readable state
-    olf_code: Optional[str] = None  # Organizational-legal form code
-    olf_name: Optional[str] = None  # e.g., "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ"
+    state: Optional[str] = None          # raw state code from source (e.g., "1", "3")
+    state_text: Optional[str] = None     # human-readable state text from source
+
+    olf_code: Optional[str] = None       # organizational-legal form code
+    olf_name: Optional[str] = None
+
     authorised_capital: Optional[float] = None
     registration_date: Optional[str] = None  # ISO "YYYY-MM-DD"
+    termination_date: Optional[str] = None
 
 
 @dataclass(frozen=True)
-class IncomeRecord:
+class KvedActivity:
     """
-    Individual income payment event.
-    Identity: Synthetic income_id (hash of person + tax_agent + period + type).
-    WHY as node (not relationship): Each payment is a queryable fact with many attributes.
-    Allows temporal queries and prevents relationship property explosion.
+    KVED activity (economic activity code).
+    Identity: code.
     """
-    income_id: str  # Synthetic unique ID
-    income_accrued: float  # Нараховано
-    income_paid: float  # Виплачено
-    tax_charged: float  # Податок нарахований
-    tax_transferred: float  # Податок перерахований
-    income_type_code: str  # e.g., "101", "150", "195"
-    income_type_description: str  # Human-readable type
-    period_quarter_month: str  # e.g., "1 квартал", "Січень", "Квітень"
-    period_year: int
-    result_income: int  # Typically 1 (success) or 2 (self-declaration)
+    code: str
+    name: Optional[str] = None
 
 
 @dataclass(frozen=True)
-class Property:
+class Address:
     """
-    Real estate or vehicle.
-    Identity: Synthetic property_id (generated from source data).
-    WHY: Properties are key in AML - unexplained ownership is a red flag.
+    Normalized address node.
+
+    WHY as node:
+    - Addresses can be shared between many persons/organizations/properties
+    - Enables address-based traversals and clustering
     """
-    property_id: str  # Synthetic unique ID
-    property_type: PropertyType
-    description: str
-    government_reg_number: Optional[str] = None  # For vehicles (license plate)
-    serial_number: Optional[str] = None  # VIN for vehicles
-    address: Optional[str] = None  # For real estate
-    area: Optional[float] = None  # Square meters for real estate
+    address_id: str   # synthetic hash (e.g., normalized full_text)
+    full_text: str
+
+    region: Optional[str] = None
+    district: Optional[str] = None
+    city: Optional[str] = None
+    street: Optional[str] = None
+    building: Optional[str] = None
+    apartment: Optional[str] = None
+    postal_code: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class Document:
+    """
+    Person identification document.
+    Identity: doc_id (synthetic).
+    """
+    doc_id: str
+    doc_type: str  # passport / idcard / foreign_passport
+
+    series: Optional[str] = None
+    number: Optional[str] = None
+    issued_by: Optional[str] = None
+    issued_date: Optional[str] = None
+    expiry_date: Optional[str] = None
 
 
 @dataclass(frozen=True)
 class Request:
     """
     Investigation request document.
-    Identity: request_id (from IDrequest field in source data).
-    WHY: Tracks provenance - which investigations triggered which data collection.
+    Identity: request_id (IDrequest from source data).
     """
-    request_id: str  # e.g., "З-2025-1898-062-1A0"
-    basis_request: Optional[str] = None  # e.g., "6161-ТІТ"
+    request_id: str
+    basis_request: Optional[str] = None
     application_number: Optional[str] = None
-    application_date: Optional[str] = None  # ISO datetime
+    application_date: Optional[str] = None
+
     period_begin_month: Optional[int] = None
     period_begin_year: Optional[int] = None
     period_end_month: Optional[int] = None
@@ -102,29 +133,152 @@ class Request:
 @dataclass(frozen=True)
 class Executor:
     """
-    Person who created the investigation request.
-    Identity: executor_rnokpp.
-    WHY separate from Person: Executors are investigators, not subjects.
-    Different domain role prevents query confusion.
+    Executor/investigator who created requests.
+    Identity: executor_rnokpp OR (fallback) synthetic executor_id.
     """
-    executor_rnokpp: str  # Tax ID
-    executor_edrpou: Optional[str] = None  # Organization code
-    full_name: str
+    executor_id: str  # stable id for graph merge
+
+    executor_rnokpp: Optional[str] = None
+    executor_edrpou: Optional[str] = None
+    full_name: Optional[str] = None
+
+    position: Optional[str] = None
+    department: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class IncomeRecord:
+    """
+    Individual income payment event.
+    Identity: synthetic income_id.
+    """
+    income_id: str
+
+    income_accrued: float
+    income_paid: float
+    tax_charged: float
+    tax_transferred: float
+
+    income_type_code: str
+    income_type_description: str
+
+    period_quarter_month: str
+    period_year: int
+    result_income: int
+
+    income_category: IncomeCategory = IncomeCategory.OTHER
+    currency: str = "UAH"
+
+    # provenance (optional but useful during ingestion/debug)
+    source_request_id: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class Property:
+    """
+    Real estate or vehicle asset.
+    Identity: synthetic property_id.
+
+    NOTE:
+    - Land parcels are modeled separately as LandParcel
+    """
+    property_id: str
+    property_type: PropertyType
+    description: str
+
+    # Vehicles
+    government_reg_number: Optional[str] = None
+    serial_number: Optional[str] = None
+
+    # Real estate
+    address_text: Optional[str] = None
+    area: Optional[float] = None
+
+    # provenance
+    source_request_id: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class LandParcel:
+    """
+    Land parcel asset.
+    Identity: cadastre_number (or synthetic land_id).
+    """
+    land_id: str
+    cadastre_number: str
+
+    area: Optional[float] = None
+    purpose: Optional[str] = None
+    address_text: Optional[str] = None
+
+    # provenance
+    source_request_id: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class NotarialBlank:
+    """
+    Notarial blank used for PoA registration.
+    Identity: blank_id (synthetic serial:number).
+    """
+    blank_id: str
+    serial: Optional[str] = None
+    number: Optional[str] = None
 
 
 @dataclass(frozen=True)
 class PowerOfAttorney:
     """
     Legal power of attorney document.
-    Identity: Synthetic poa_id (from notarial registration number + date).
-    WHY: Shows control relationships - who can act on behalf of whom.
-    Critical for detecting hidden beneficial owners.
+    Identity: synthetic poa_id.
     """
-    poa_id: str  # Synthetic unique ID
+    poa_id: str
+
     notarial_reg_number: Optional[str] = None
-    attested_date: Optional[str] = None  # ISO datetime
-    finished_date: Optional[str] = None  # ISO datetime (expiration)
-    witness_name: Optional[str] = None  # Notary details
+    attested_date: Optional[str] = None
+    finished_date: Optional[str] = None
+
+    witness_name: Optional[str] = None
+    notary_name: Optional[str] = None
+
+    # provenance
+    source_request_id: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class CourtCase:
+    """
+    Court case / legal record.
+    Identity: synthetic case_id.
+    """
+    case_id: str
+
+    court_name: Optional[str] = None
+    case_number: Optional[str] = None
+    judge: Optional[str] = None
+    decision_date: Optional[str] = None
+
+    category: Optional[str] = None
+    document_type: Optional[str] = None
+    result: Optional[str] = None
+
+    # provenance
+    source_request_id: Optional[str] = None
+
+
+@dataclass(frozen=True)
+class BirthRecord:
+    """
+    Civil registry birth record.
+    Identity: record_id.
+    """
+    record_id: str
+    record_date: Optional[str] = None
+    registry_office: Optional[str] = None
+
+    # Note: we do NOT store links here (rnokpp) as fields.
+    # These connections are represented as relationships in the graph.
+    source_request_id: Optional[str] = None
 
 
 # ============================================================================
@@ -134,45 +288,45 @@ class PowerOfAttorney:
 # ============================================================================
 
 
-@dataclass(frozen=True)
-class DirectorRelation:
-    """Person is director of organization."""
-    person_rnokpp: str
-    organization_edrpou: str
-    role_text: Optional[str] = None  # e.g., "керівник"
+# @dataclass(frozen=True)
+# class DirectorRelation:
+#     """Person is director of organization."""
+#     person_rnokpp: str
+#     organization_edrpou: str
+#     role_text: Optional[str] = None  # e.g., "керівник"
 
 
-@dataclass(frozen=True)
-class FounderRelation:
-    """Person is founder/shareholder of organization."""
-    person_rnokpp: str
-    organization_edrpou: str
-    capital: Optional[float] = None  # Investment amount
-    role_text: Optional[str] = None  # e.g., "засновник"
+# @dataclass(frozen=True)
+# class FounderRelation:
+#     """Person is founder/shareholder of organization."""
+#     person_rnokpp: str
+#     organization_edrpou: str
+#     capital: Optional[float] = None  # Investment amount
+#     role_text: Optional[str] = None  # e.g., "засновник"
 
 
-@dataclass(frozen=True)
-class ChildOfRelation:
-    """Person is child of another person."""
-    child_rnokpp: str
-    parent_rnokpp: str
+# @dataclass(frozen=True)
+# class ChildOfRelation:
+#     """Person is child of another person."""
+#     child_rnokpp: str
+#     parent_rnokpp: str
 
 
-@dataclass(frozen=True)
-class SpouseOfRelation:
-    """Person is married to another person."""
-    person_rnokpp: str
-    spouse_rnokpp: str
-    marriage_date: Optional[str] = None
+# @dataclass(frozen=True)
+# class SpouseOfRelation:
+#     """Person is married to another person."""
+#     person_rnokpp: str
+#     spouse_rnokpp: str
+#     marriage_date: Optional[str] = None
 
 
-@dataclass(frozen=True)
-class OwnershipRelation:
-    """Person owns property."""
-    person_rnokpp: str
-    property_id: str
-    ownership_type: Optional[str] = None
-    since_date: Optional[str] = None
+# @dataclass(frozen=True)
+# class OwnershipRelation:
+#     """Person owns property."""
+#     person_rnokpp: str
+#     property_id: str
+#     ownership_type: Optional[str] = None
+#     since_date: Optional[str] = None
 
 
 # ============================================================================
@@ -182,14 +336,58 @@ class OwnershipRelation:
 # ============================================================================
 
 
+# @dataclass
+# class PersonProfile:
+#     """
+#     Comprehensive person profile (computed view).
+#     WHY: Aggregates data from multiple graph traversals for risk analysis.
+#     Not stored - computed on-demand from graph.
+#     """
+#     person: Person
+
+#     # Corporate connections
+#     organizations_director: List[Organization] = field(default_factory=list)
+#     organizations_founder: List[Organization] = field(default_factory=list)
+
+#     # Income sources
+#     income_records: List[IncomeRecord] = field(default_factory=list)
+#     total_income_paid: float = 0.0
+#     total_tax_paid: float = 0.0
+
+#     # Properties
+#     properties_direct: List[Property] = field(default_factory=list)
+#     properties_via_poa: List[Property] = field(default_factory=list)
+
+#     # Family network
+#     children: List[Person] = field(default_factory=list)
+#     parents: List[Person] = field(default_factory=list)
+#     spouse: Optional[Person] = None
+
+#     # Investigation metadata
+#     requests: List[Request] = field(default_factory=list)
+
+#     # Metadata for additional context
+#     meta: Dict[str, Any] = field(default_factory=dict)
+
+
+# ============================================================================
+# COMPUTED VIEWS (NOT stored in Neo4j)
+# WHY:
+# - Built on-demand by services
+# - Aggregates subgraphs for UI/risk analytics
+# ============================================================================
+
 @dataclass
 class PersonProfile:
     """
-    Comprehensive person profile (computed view).
-    WHY: Aggregates data from multiple graph traversals for risk analysis.
-    Not stored - computed on-demand from graph.
+    Computed view for a person.
+    Not stored in Neo4j, built from graph traversals.
     """
     person: Person
+
+    # Identity / KYC (from graph)
+    documents: List[Document] = field(default_factory=list)
+    registration_address: Optional[Address] = None
 
     # Corporate connections
     organizations_director: List[Organization] = field(default_factory=list)
@@ -199,43 +397,45 @@ class PersonProfile:
     income_records: List[IncomeRecord] = field(default_factory=list)
     total_income_paid: float = 0.0
     total_tax_paid: float = 0.0
+    income_by_year: Dict[int, float] = field(default_factory=dict)
 
-    # Properties
+    # Assets
     properties_direct: List[Property] = field(default_factory=list)
+    land_parcels: List[LandParcel] = field(default_factory=list)
+
+    # PoA network
+    poa_received_by_person: List[PowerOfAttorney] = field(default_factory=list)
+    poa_given_to_person: List[PowerOfAttorney] = field(default_factory=list)
     properties_via_poa: List[Property] = field(default_factory=list)
 
-    # Family network
-    children: List[Person] = field(default_factory=list)
-    parents: List[Person] = field(default_factory=list)
-    spouse: Optional[Person] = None
+    # Legal / Court
+    court_cases: List[CourtCase] = field(default_factory=list)
 
     # Investigation metadata
     requests: List[Request] = field(default_factory=list)
 
-    # Metadata for additional context
+    # Risk/analytics
+    risk_flags: List[str] = field(default_factory=list)
+    risk_score: float = 0.0
+
     meta: Dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
 class OrganizationProfile:
     """
-    Comprehensive organization profile (computed view).
-    WHY: Aggregates corporate structure for due diligence.
+    Computed view for organization due diligence.
     """
     organization: Organization
-
-    # People connected to this organization
     directors: List[Person] = field(default_factory=list)
     founders: List[Person] = field(default_factory=list)
 
-    # Financial activity
-    total_income_paid: float = 0.0  # Total paid to all employees
-    employee_count: int = 0  # Number of people who received income
+    total_income_paid: float = 0.0
+    employee_count: int = 0
 
-    # Metadata
     meta: Dict[str, Any] = field(default_factory=dict)
 
-
+    
 @dataclass
 class IncomeAggregate:
     """
