@@ -43,3 +43,4 @@ pipeline/parsed
 pipeline/test_normalization.py
 pipeline/output
 pipeline/test_ingest.py
+.python-version
