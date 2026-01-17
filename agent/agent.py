@@ -288,8 +288,8 @@ class LangGraphIngestionAgent:
             if not isinstance(parsed, dict):
                 return _set_fatal(state, f"Expected dict record, got {type(parsed)}")
             
-            print("1")
-            print(state)
+            # print("1")
+            # print(state)
 
             return {**state, "raw_json": parsed}
 
@@ -307,8 +307,8 @@ class LangGraphIngestionAgent:
                 # If extractor returns dict-like, validate it here
                 facts = GraphFactsPayload.model_validate(extracted)
 
-            print("2")
-            print(state)
+            # print("2")
+            # print(state)
             return {**state, "facts": facts}
 
         @_safe_node
@@ -316,8 +316,8 @@ class LangGraphIngestionAgent:
             facts = state["facts"]
             facts = normalize(facts)
 
-            print("3")
-            print(state)
+            # print("3")
+            # print(state)
             return {**state, "facts": facts}
 
         @_safe_node
@@ -326,8 +326,8 @@ class LangGraphIngestionAgent:
             errors = validate(facts) or []
             # ensure list[str]
             errors = [str(e) for e in errors]
-            print("4")
-            print(state)
+            # print("4")
+            # print(state)
             return {**state, "errors": errors}
 
         @_safe_node
@@ -352,8 +352,8 @@ class LangGraphIngestionAgent:
             else:
                 fixed_facts = GraphFactsPayload.model_validate(fixed)
 
-            print("5")
-            print(state)
+            # print("5")
+            # print(state)
             # IMPORTANT: we do not validate here; pipeline will normalize -> validate after this node
             return {
                 **state,
@@ -374,8 +374,8 @@ class LangGraphIngestionAgent:
                 logger.exception("Persist failed")
                 return _set_fatal(state, f"Persist failed: {e}")
             
-            print("6")
-            print(state)
+            # print("6")
+            # print(state)
             return {**state, "persisted": True}
 
         # -----------------------------

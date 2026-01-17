@@ -3,7 +3,8 @@ import os
 
 from domain.enums import NodeLabel, RelType
 from repositories.ingest_repo import GraphRepository
-
+from core.neo4j_driver import init_driver, close_driver
+    
 
 class IngestionPipeline:
 
